@@ -1,0 +1,5116 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Customised Programs by Sajan Shah | High-Impact Transformation Programs For Schools, Colleges & Corporates</title>
+  <meta name="description" content="Not another ordinary session. Sajan Shah designs high-impact customised programs in psychology, neuroscience, motivation, leadership and emotional intelligence for schools, colleges, corporates and organisations across India.">
+  <meta name="keywords" content="customised training programs India, motivational speaker India, corporate training, student transformation, Sajan Shah, neuroscience programs, teacher training">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Customised Programs by Sajan Shah">
+  <meta property="og:description" content="High-impact programs designed for your exact audience, challenges and goals. Not a template. Fully customised.">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Bebas+Neue&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&family=Playfair+Display:ital,wght@1,600;1,700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --orange:         #f26522;
+      --white:          #ffffff;
+      --black:          #000000;
+      --dark-gray:      #050505;
+      --elevated-black: #0a0a0a;
+      --border-gray:    #1f2937;
+      --muted-text:     #9ca3af;
+      --orange-glow:    rgba(242, 101, 34, 0.15);
+      --orange-dim:     rgba(242, 101, 34, 0.08);
+      --success-green:  #22c55e;
+      --error-red:      #ef4444;
+      
+      --font-display: 'Bebas Neue', sans-serif;
+      --font-subheading: 'Barlow Condensed', sans-serif;
+      --font-body: 'DM Sans', sans-serif;
+      --font-accent: 'Playfair Display', serif;
+    }
+
+    /* Reset & Base Styles */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--black);
+      color: var(--white);
+      font-family: var(--font-body);
+      overflow-x: hidden;
+      line-height: 1.6;
+    }
+
+    /* Typography Utilities */
+    h1, h2, h3, h4, h5, h6 {
+      font-weight: normal;
+    }
+
+    .display-title {
+      font-family: var(--font-display);
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .eyebrow {
+      font-family: var(--font-subheading);
+      font-weight: 600;
+      color: var(--orange);
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      font-size: 0.875rem;
+      margin-bottom: 0.75rem;
+      display: inline-block;
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .section-subtitle {
+      font-size: clamp(1rem, 2vw, 1.25rem);
+      color: var(--muted-text);
+      max-width: 700px;
+      margin-bottom: 3rem;
+    }
+
+    /* Container Utilities */
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    /* Spacing & Rhythm */
+    section {
+      padding-top: 6rem;
+      padding-bottom: 6rem;
+      position: relative;
+    }
+
+    .bg-black-section {
+      background-color: var(--black);
+    }
+
+    .bg-gray-section {
+      background-color: var(--dark-gray);
+    }
+
+    /* Transition & Animation Utilities */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(30px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-up.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .fade-left {
+      opacity: 0;
+      transform: translateX(-40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-left.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    .fade-right {
+      opacity: 0;
+      transform: translateX(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .fade-right.active {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* Staggered Delay Utilities */
+    .delay-100 { transition-delay: 100ms; }
+    .delay-200 { transition-delay: 200ms; }
+    .delay-300 { transition-delay: 300ms; }
+    .delay-400 { transition-delay: 400ms; }
+    .delay-500 { transition-delay: 500ms; }
+
+    /* Button Styles */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.875rem 2rem;
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 4px;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      text-decoration: none;
+      border: 2px solid transparent;
+      outline: none;
+    }
+
+    .btn-primary {
+      background-color: var(--orange);
+      color: var(--white);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(242, 101, 34, 0.25);
+    }
+
+    .btn-primary::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -100%;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+      );
+      transition: 0.5s;
+    }
+
+    .btn-primary:hover::before {
+      left: 100%;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 25px rgba(242, 101, 34, 0.4);
+    }
+
+    .btn-secondary {
+      background-color: transparent;
+      border-color: var(--orange);
+      color: var(--orange);
+    }
+
+    .btn-secondary:hover {
+      background-color: var(--orange-dim);
+      transform: translateY(-2px);
+    }
+
+    .btn-large {
+      padding: 1.125rem 2.5rem;
+      font-size: 1.25rem;
+    }
+
+    /* Page Loader Overlay */
+    #loader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--black);
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition: opacity 0.5s ease;
+    }
+
+    .spinner {
+      width: 50px;
+      height: 50px;
+      border: 3px solid rgba(242, 101, 34, 0.1);
+      border-radius: 50%;
+      border-top-color: var(--orange);
+      animation: spin 1s ease-in-out infinite;
+      margin-bottom: 1.5rem;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* Custom Cursor Follower */
+    .cursor-dot {
+      width: 6px;
+      height: 6px;
+      background-color: var(--orange);
+      position: fixed;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 10000;
+      transform: translate(-50%, -50%);
+      transition: width 0.2s, height 0.2s;
+    }
+
+    /* Navigation styling */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: background-color 0.4s ease, border-color 0.4s ease;
+      border-bottom: 1px solid transparent;
+    }
+
+    header.scrolled {
+      background-color: var(--elevated-black);
+      border-color: var(--border-gray);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo-container {
+      text-decoration: none;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .logo-title {
+      font-family: var(--font-display);
+      font-size: 1.875rem;
+      color: var(--orange);
+      line-height: 0.9;
+      letter-spacing: 0.05em;
+    }
+
+    .logo-subtitle {
+      font-family: var(--font-subheading);
+      font-size: 0.75rem;
+      color: var(--white);
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      margin-top: 2px;
+    }
+
+    .nav-menu {
+      display: flex;
+      list-style: none;
+      gap: 2rem;
+    }
+
+    .nav-link {
+      color: var(--muted-text);
+      text-decoration: none;
+      font-family: var(--font-subheading);
+      font-weight: 600;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      transition: color 0.3s;
+      position: relative;
+      padding: 0.25rem 0;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      color: var(--white);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--orange);
+      transition: width 0.3s ease;
+    }
+
+    .nav-link.active::after, .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Hamburger Menu */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 24px;
+      height: 18px;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      z-index: 1001;
+    }
+
+    .hamburger span {
+      width: 100%;
+      height: 2px;
+      background-color: var(--orange);
+      transition: all 0.3s ease;
+    }
+
+    /* Mobile Overlay Menu */
+    .mobile-menu-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: var(--black);
+      z-index: 999;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.4s ease;
+    }
+
+    .mobile-menu-overlay.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .mobile-nav-list {
+      list-style: none;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .mobile-nav-link {
+      font-family: var(--font-display);
+      font-size: 2.5rem;
+      color: var(--white);
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      display: block;
+      transition: color 0.3s;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .mobile-menu-overlay.open .mobile-nav-link {
+      animation: mobileLinkFadeIn 0.5s ease forwards;
+    }
+
+    @keyframes mobileLinkFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Geometric Dividers */
+    .section-divider {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      margin: 4rem 0;
+    }
+
+    .section-divider::before, .section-divider::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background-color: var(--border-gray);
+    }
+
+    .divider-diamond {
+      color: var(--orange);
+      margin: 0 1rem;
+      font-size: 0.875rem;
+    }
+
+    /* Card styling basics */
+    .card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2.5rem;
+      transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px var(--orange-glow);
+      border-top: 3px solid var(--orange);
+    }
+
+    /* Hero Section Canvas and Grid */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: var(--black);
+      overflow: hidden;
+      padding-top: 140px;
+      padding-bottom: 60px;
+    }
+
+    #hero::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 15%;
+      background: linear-gradient(to top, var(--dark-gray), transparent);
+      pointer-events: none;
+    }
+
+    #particle-canvas {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 1;
+    }
+
+    .hero-grid-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 2;
+      opacity: 0.03;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 10;
+      text-align: center;
+      max-width: 960px;
+      padding: 0 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-badge {
+      border: 1px solid var(--orange);
+      padding: 0.5rem 1.25rem;
+      border-radius: 9999px;
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      font-size: 0.875rem;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      background-color: rgba(242, 101, 34, 0.05);
+      animation: pulse-glow 2s infinite alternate;
+    }
+
+    @keyframes pulse-glow {
+      0% { box-shadow: 0 0 5px rgba(242, 101, 34, 0.1); }
+      100% { box-shadow: 0 0 15px rgba(242, 101, 34, 0.3); }
+    }
+
+    .hero-title {
+      font-family: var(--font-display);
+      font-size: clamp(3.5rem, 8vw, 7rem);
+      line-height: 0.95;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+      letter-spacing: -0.01em;
+    }
+
+    .typewriter-container {
+      font-family: var(--font-subheading);
+      font-size: clamp(1.25rem, 3vw, 2rem);
+      color: var(--orange);
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 2rem;
+      min-height: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .typewriter-cursor {
+      display: inline-block;
+      width: 3px;
+      height: 1.8rem;
+      background-color: var(--orange);
+      margin-left: 5px;
+      animation: blink 0.75s step-end infinite;
+    }
+
+    @keyframes blink {
+      from, to { background-color: transparent }
+      50% { background-color: var(--orange); }
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1rem, 2vw, 1.15rem);
+      color: var(--muted-text);
+      max-width: 760px;
+      margin-bottom: 3rem;
+      line-height: 1.7;
+    }
+
+    .hero-ctas {
+      display: flex;
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .trust-ticker {
+      display: flex;
+      gap: 1.5rem;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: center;
+      font-family: var(--font-subheading);
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted-text);
+    }
+
+    .trust-ticker span {
+      display: flex;
+      align-items: center;
+    }
+
+    .trust-ticker span:not(:last-child)::after {
+      content: '•';
+      color: var(--orange);
+      margin-left: 1.5rem;
+      font-weight: bold;
+    }
+
+    /* Counters / Dashboard styling */
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .counter-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-top: 3px solid transparent;
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-radius: 4px;
+      transition: border-top-color 0.3s;
+    }
+
+    .counter-card:hover {
+      border-top-color: var(--orange);
+    }
+
+    .counter-number {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 4vw, 4rem);
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .counter-label {
+      font-size: 0.875rem;
+      color: var(--muted-text);
+      line-height: 1.4;
+      text-transform: uppercase;
+      font-family: var(--font-subheading);
+      letter-spacing: 0.05em;
+    }
+
+    /* Horizontal auto scrolling marquee */
+    .marquee-container {
+      overflow: hidden;
+      width: 100vw;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: var(--elevated-black);
+      padding: 1.5rem 0;
+      border-top: 1px solid var(--border-gray);
+      border-bottom: 1px solid var(--border-gray);
+      margin-bottom: 4rem;
+    }
+
+    .marquee-content {
+      display: flex;
+      white-space: nowrap;
+      animation: marquee 35s linear infinite;
+    }
+
+    .marquee-item {
+      font-family: var(--font-body);
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.15em;
+      color: var(--muted-text);
+      padding: 0 2rem;
+      display: flex;
+      align-items: center;
+    }
+
+    .marquee-item::after {
+      content: '◆';
+      color: var(--orange);
+      margin-left: 4rem;
+    }
+
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Client Logos Placeholder Grid */
+    .client-logos-section {
+      text-align: center;
+    }
+
+    .logos-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .logo-slot {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      height: 80px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted-text);
+      font-family: var(--font-subheading);
+      font-size: 0.875rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      transition: all 0.3s;
+    }
+
+    .logo-slot:hover {
+      border-color: var(--orange);
+      color: var(--white);
+    }
+
+    .logo-caption {
+      font-size: 0.875rem;
+      color: var(--muted-text);
+      font-style: italic;
+    }
+
+    /* Problem statement sections */
+    .problem-box {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .strikethrough-list {
+      list-style: none;
+      margin: 3rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .strikethrough-item {
+      font-family: var(--font-body);
+      font-size: clamp(1.25rem, 2.5vw, 1.875rem);
+      color: var(--muted-text);
+      position: relative;
+      display: inline-block;
+      margin: 0 auto;
+      width: fit-content;
+    }
+
+    .strikethrough-line {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 0;
+      height: 3px;
+      background-color: var(--error-red);
+      transform: translateY(-50%);
+      transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .strikethrough-item.struck .strikethrough-line {
+      width: 100%;
+    }
+
+    .divider-line {
+      height: 2px;
+      background-color: var(--orange);
+      width: 120px;
+      margin: 3rem auto;
+    }
+
+    .problem-title {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 6vw, 5rem);
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      line-height: 1.1;
+    }
+
+    /* Audience target cards */
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 1.25rem;
+      margin-bottom: 4rem;
+    }
+
+    .audience-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2rem 1.25rem;
+      text-align: center;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      cursor: default;
+      border-top: 3px solid transparent;
+    }
+
+    .audience-card:hover {
+      transform: translateY(-6px) scale(1.04);
+      box-shadow: 0 10px 25px var(--orange-glow);
+      border-top-color: var(--orange);
+    }
+
+    .audience-emoji {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .audience-label {
+      font-family: var(--font-body);
+      font-weight: 700;
+      color: var(--white);
+      font-size: 1.125rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .audience-desc {
+      font-size: 0.875rem;
+      color: var(--muted-text);
+      line-height: 1.4;
+      transition: color 0.3s;
+    }
+
+    .audience-card:hover .audience-desc {
+      color: var(--white);
+    }
+
+    .audience-callout {
+      text-align: center;
+      font-family: var(--font-body);
+      font-style: italic;
+      color: var(--orange);
+      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+      margin-top: 2rem;
+      font-weight: 500;
+    }
+
+    /* Programs Catalogue & Filtering */
+    .filter-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+
+    .filter-btn {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--muted-text);
+      padding: 0.6rem 1.5rem;
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      border-color: var(--orange);
+      color: var(--white);
+      background-color: var(--orange);
+    }
+
+    .programs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+    }
+
+    .program-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-top: 3px solid transparent;
+      padding: 2.5rem;
+      border-radius: 4px;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .program-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px var(--orange-glow);
+      border-top-color: var(--orange);
+    }
+
+    .program-icon {
+      font-size: 2.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .program-name {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .program-desc {
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .program-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .program-tag {
+      background-color: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-gray);
+      color: var(--muted-text);
+      font-size: 0.75rem;
+      padding: 0.25rem 0.6rem;
+      border-radius: 9999px;
+      font-family: var(--font-subheading);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Out of grid transitions for cards filtering */
+    .program-card-wrapper {
+      transition: opacity 0.4s ease, transform 0.4s ease;
+    }
+
+    .program-card-wrapper.hide {
+      opacity: 0;
+      transform: scale(0.9);
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+      padding: 0;
+      border: none;
+      margin: 0;
+    }
+
+    /* Outcomes checklist styling */
+    .outcomes-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+      margin-bottom: 4rem;
+    }
+
+    .outcome-column {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .outcome-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      padding: 1.5rem;
+      border-radius: 4px;
+    }
+
+    .outcome-check {
+      color: var(--orange);
+      font-size: 1.25rem;
+      line-height: 1;
+      margin-top: 0.25rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .outcome-text-wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .outcome-label {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1.125rem;
+      color: var(--white);
+      margin-bottom: 0.25rem;
+    }
+
+    .outcome-desc {
+      color: var(--muted-text);
+      font-size: 0.875rem;
+    }
+
+    .outcomes-footer-banner {
+      border-left: 4px solid var(--orange);
+      background-color: var(--elevated-black);
+      padding: 2rem;
+      font-size: 1.15rem;
+      border-radius: 0 4px 4px 0;
+      border-top: 1px solid var(--border-gray);
+      border-right: 1px solid var(--border-gray);
+      border-bottom: 1px solid var(--border-gray);
+    }
+
+    /* Table - generic vs custom */
+    .comparison-wrapper {
+      width: 100%;
+      overflow-x: auto;
+      margin-bottom: 2rem;
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+    }
+
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+    }
+
+    .comparison-table th {
+      background-color: var(--elevated-black);
+      padding: 1.5rem;
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      border-bottom: 2px solid var(--border-gray);
+    }
+
+    .comparison-table th:first-child {
+      color: var(--error-red);
+      width: 50%;
+      border-right: 1px solid var(--border-gray);
+    }
+
+    .comparison-table th:last-child {
+      color: var(--orange);
+      width: 50%;
+    }
+
+    .comparison-table td {
+      padding: 1.25rem 1.5rem;
+      border-bottom: 1px solid var(--border-gray);
+      font-size: 1.05rem;
+      background-color: var(--black);
+      transition: background-color 0.3s;
+    }
+
+    .comparison-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comparison-table td:first-child {
+      color: var(--muted-text);
+      border-right: 1px solid var(--border-gray);
+      background-color: rgba(239, 68, 68, 0.01);
+    }
+
+    .comparison-table td:last-child {
+      color: var(--white);
+      font-weight: 500;
+      background-color: rgba(242, 101, 34, 0.01);
+    }
+
+    .comparison-table tr:hover td:first-child {
+      background-color: rgba(239, 68, 68, 0.03);
+    }
+
+    .comparison-table tr:hover td:last-child {
+      background-color: rgba(242, 101, 34, 0.03);
+    }
+
+    /* Steps vertical timeline */
+    .timeline-container {
+      position: relative;
+      max-width: 800px;
+      margin: 4rem auto;
+      padding: 0 1rem;
+    }
+
+    .timeline-svg-line {
+      position: absolute;
+      top: 0;
+      left: 20px;
+      width: 4px;
+      height: 100%;
+      z-index: 1;
+    }
+
+    .timeline-step {
+      display: flex;
+      margin-bottom: 4rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .timeline-step:last-child {
+      margin-bottom: 0;
+    }
+
+    .step-number-container {
+      width: 44px;
+      height: 44px;
+      background-color: var(--black);
+      border: 2px solid var(--border-gray);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted-text);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      margin-right: 2rem;
+      flex-shrink: 0;
+      transition: all 0.4s;
+    }
+
+    .timeline-step.active .step-number-container {
+      border-color: var(--orange);
+      background-color: var(--orange);
+      color: var(--white);
+      box-shadow: 0 0 15px var(--orange);
+    }
+
+    .step-content-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2rem;
+      flex-grow: 1;
+      transition: all 0.3s;
+    }
+
+    .timeline-step.active .step-content-card {
+      border-color: var(--orange);
+      box-shadow: 0 5px 20px rgba(242, 101, 34, 0.1);
+    }
+
+    .step-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+    }
+
+    .step-desc {
+      color: var(--muted-text);
+      font-size: 0.95rem;
+    }
+
+    /* Understanding pillars */
+    .pillars-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 2fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .pillar-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2.5rem;
+      transition: all 0.3s;
+    }
+
+    .pillar-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-4px);
+    }
+
+    .pillar-icon {
+      font-size: 2.5rem;
+      color: var(--orange);
+      margin-bottom: 1.25rem;
+    }
+
+    .pillar-name {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .pillar-desc {
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+    /* About section layout */
+    .about-split {
+      display: grid;
+      grid-template-columns: 4fr 6fr;
+      gap: 4rem;
+      align-items: center;
+    }
+
+    .portrait-wrapper {
+      position: relative;
+      width: 100%;
+      aspect-ratio: 4/5;
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .portrait-frame {
+      width: 100%;
+      height: 100%;
+      border: 2px solid var(--orange);
+      border-radius: 4px;
+      background: linear-gradient(135deg, #111 0%, #222 100%);
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .portrait-frame::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: radial-gradient(circle at center, transparent 30%, var(--black) 100%);
+      z-index: 2;
+    }
+
+    .portrait-placeholder-icon {
+      font-size: 5rem;
+      opacity: 0.15;
+      color: var(--orange);
+      z-index: 1;
+    }
+
+    .portrait-accent-corner {
+      position: absolute;
+      top: 15px;
+      right: 15px;
+      width: 25px;
+      height: 25px;
+      border-top: 3px solid var(--orange);
+      border-right: 3px solid var(--orange);
+      z-index: 5;
+    }
+
+    .credentials-pills {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .credential-pill {
+      background-color: var(--orange);
+      color: var(--white);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.6rem 1.25rem;
+      border-radius: 4px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(242, 101, 34, 0.15);
+    }
+
+    .about-bio-badges {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin: 1.5rem 0;
+    }
+
+    .about-bio-badge {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--orange);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.4rem 1rem;
+      border-radius: 9999px;
+    }
+
+    .about-text {
+      color: var(--muted-text);
+      font-size: 1.1rem;
+      line-height: 1.7;
+      margin-bottom: 2rem;
+    }
+
+    .about-quote {
+      font-family: var(--font-accent);
+      font-size: 1.6rem;
+      color: var(--orange);
+      line-height: 1.5;
+      border-left: 3px solid var(--orange);
+      padding-left: 1.5rem;
+      margin: 2.5rem 0;
+    }
+
+    .strength-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .strength-tag {
+      background-color: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border-gray);
+      color: var(--white);
+      font-size: 0.9rem;
+      padding: 0.5rem 1.25rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+
+    .about-bottom-bold {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: var(--white);
+    }
+
+    /* Testimonials section */
+    .testimonial-carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+      padding: 2rem 0;
+    }
+
+    .testimonial-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+      gap: 1.5rem;
+    }
+
+    .testimonial-card {
+      flex: 0 0 calc((100% - 6rem) / 5);
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-top: 3px solid var(--orange);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 320px;
+    }
+
+    .testimonial-quote {
+      font-family: var(--font-accent);
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--white);
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .testimonial-quote::before {
+      content: '“';
+      font-size: 3rem;
+      color: var(--orange);
+      position: absolute;
+      top: -20px;
+      left: -15px;
+      opacity: 0.2;
+    }
+
+    .testimonial-author-wrapper {
+      margin-top: auto;
+      border-top: 1px solid var(--border-gray);
+      padding-top: 1.25rem;
+    }
+
+    .testimonial-author {
+      font-weight: 700;
+      color: var(--orange);
+      font-size: 0.95rem;
+    }
+
+    .testimonial-role {
+      font-size: 0.8rem;
+      color: var(--muted-text);
+      text-transform: uppercase;
+      font-family: var(--font-subheading);
+      letter-spacing: 0.05em;
+      margin-top: 2px;
+    }
+
+    .testimonial-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 3rem;
+    }
+
+    .carousel-arrows {
+      display: flex;
+      gap: 1rem;
+    }
+
+    .carousel-arrow {
+      width: 44px;
+      height: 44px;
+      border: 1px solid var(--border-gray);
+      background-color: var(--elevated-black);
+      color: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      font-size: 1.25rem;
+    }
+
+    .carousel-arrow:hover {
+      border-color: var(--orange);
+      background-color: var(--orange-dim);
+    }
+
+    .carousel-dots {
+      display: flex;
+      gap: 0.5rem;
+    }
+
+    .carousel-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--border-gray);
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .carousel-dot.active {
+      background-color: var(--orange);
+      width: 24px;
+      border-radius: 4px;
+    }
+
+    .carousel-progress-container {
+      width: 100%;
+      height: 2px;
+      background-color: var(--border-gray);
+      margin-top: 1rem;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .carousel-progress-bar {
+      height: 100%;
+      width: 0;
+      background-color: var(--orange);
+      transition: width 0.3s ease;
+    }
+
+    .testimonial-bottom-quote {
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: 1.35rem;
+      color: var(--orange);
+      margin-top: 4rem;
+      font-weight: 500;
+    }
+
+    /* Choice list reasons Sajan Shah */
+    .reasons-box {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .choice-subtitle {
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--white);
+      margin-bottom: 3rem;
+    }
+
+    .reasons-columns {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 4rem;
+      margin-bottom: 4rem;
+    }
+
+    .reasons-column-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      border-bottom: 2px solid var(--border-gray);
+      padding-bottom: 0.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .reasons-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .reason-item {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.15rem;
+      color: var(--muted-text);
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+
+    .reason-item:hover {
+      color: var(--white);
+    }
+
+    .reason-icon {
+      color: var(--orange);
+      font-size: 1.5rem;
+    }
+
+    .reasons-banner {
+      background-color: var(--elevated-black);
+      border-left: 4px solid var(--orange);
+      border-top: 1px solid var(--border-gray);
+      border-right: 1px solid var(--border-gray);
+      border-bottom: 1px solid var(--border-gray);
+      border-radius: 0 4px 4px 0;
+      padding: 2.5rem;
+      font-size: 1.15rem;
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* Program delivery mode cards */
+    .delivery-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+
+    .delivery-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 3rem 2rem;
+      text-align: center;
+      position: relative;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+
+    .delivery-card:hover {
+      border-color: var(--orange);
+      transform: translateY(-4px);
+    }
+
+    .delivery-badge {
+      position: absolute;
+      top: 1rem;
+      right: 1rem;
+      background-color: var(--orange);
+      color: var(--white);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 0.75rem;
+      padding: 0.25rem 0.75rem;
+      border-radius: 9999px;
+      letter-spacing: 0.05em;
+    }
+
+    .delivery-icon {
+      font-size: 3rem;
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .delivery-name {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .delivery-features {
+      list-style: none;
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    /* Duration Selector styling */
+    .duration-selector-row {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid var(--border-gray);
+      padding-bottom: 1.5rem;
+      margin-bottom: 3rem;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .duration-pill {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--muted-text);
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.3s;
+      flex-grow: 1;
+      text-align: center;
+    }
+
+    .duration-pill:hover, .duration-pill.active {
+      border-color: var(--orange);
+      color: var(--white);
+      background-color: var(--orange);
+    }
+
+    .duration-content-box {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2.5rem;
+      transition: all 0.3s ease;
+    }
+
+    .duration-detail-item {
+      display: none;
+    }
+
+    .duration-detail-item.active {
+      display: block;
+      animation: fadeIn 0.4s ease forwards;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .duration-detail-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.5rem;
+      color: var(--white);
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+    }
+
+    .duration-detail-text {
+      color: var(--muted-text);
+      font-size: 1rem;
+      line-height: 1.7;
+    }
+
+    /* Form container styles */
+    .form-section-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .form-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 3.5rem;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 1.5rem;
+    }
+
+    .form-group-full {
+      grid-column: span 2;
+    }
+
+    .form-label {
+      font-family: var(--font-body);
+      font-weight: 500;
+      font-size: 0.9rem;
+      color: var(--muted-text);
+      margin-bottom: 0.5rem;
+    }
+
+    .form-input, .form-select, .form-textarea {
+      background-color: var(--black);
+      border: 1px solid var(--border-gray);
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 4px;
+      outline: none;
+      transition: all 0.3s;
+      width: 100%;
+    }
+
+    .form-input:focus, .form-select:focus, .form-textarea:focus {
+      border-color: var(--orange);
+      box-shadow: 0 0 0 2px var(--orange-glow);
+    }
+
+    .form-textarea {
+      resize: vertical;
+      min-height: 120px;
+    }
+
+    /* Mobile Number Prefix */
+    .phone-input-wrapper {
+      display: flex;
+      position: relative;
+    }
+
+    .phone-prefix {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-right: none;
+      color: var(--muted-text);
+      font-family: var(--font-body);
+      font-size: 1rem;
+      padding: 0.85rem 1rem;
+      border-radius: 4px 0 0 4px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    .phone-input-wrapper .form-input {
+      border-radius: 0 4px 4px 0;
+    }
+
+    /* Increment controls for participants count */
+    .number-input-wrapper {
+      display: flex;
+      align-items: center;
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      background-color: var(--black);
+      overflow: hidden;
+      width: fit-content;
+    }
+
+    .number-btn {
+      background: transparent;
+      border: none;
+      color: var(--muted-text);
+      font-size: 1.25rem;
+      width: 44px;
+      height: 44px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s;
+      outline: none;
+      user-select: none;
+    }
+
+    .number-btn:hover {
+      background-color: var(--border-gray);
+      color: var(--white);
+    }
+
+    .number-input-wrapper .form-input {
+      border: none;
+      text-align: center;
+      width: 80px;
+      padding: 0;
+      font-size: 1.1rem;
+      font-weight: 700;
+      height: 44px;
+      background-color: transparent;
+    }
+
+    /* Searchable multi select pills */
+    .pills-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+
+    .pill-checkbox {
+      display: none;
+    }
+
+    .pill-label {
+      background-color: var(--black);
+      border: 1px solid var(--border-gray);
+      color: var(--muted-text);
+      padding: 0.5rem 1rem;
+      border-radius: 9999px;
+      font-size: 0.875rem;
+      font-family: var(--font-subheading);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      cursor: pointer;
+      transition: all 0.3s;
+      user-select: none;
+    }
+
+    .pill-label:hover {
+      border-color: var(--orange);
+    }
+
+    .pill-checkbox:checked + .pill-label {
+      background-color: var(--orange);
+      border-color: var(--orange);
+      color: var(--white);
+    }
+
+    /* Radio cards */
+    .radio-cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 0.5rem;
+    }
+
+    .radio-card-input {
+      display: none;
+    }
+
+    .radio-card-label {
+      background-color: var(--black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.3s;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .radio-card-label:hover {
+      border-color: var(--orange);
+    }
+
+    .radio-card-input:checked + .radio-card-label {
+      border-color: var(--orange);
+      background-color: var(--orange-dim);
+      box-shadow: 0 0 15px var(--orange-glow);
+    }
+
+    .radio-card-icon {
+      font-size: 1.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .radio-card-text {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    /* Validator alerts */
+    .validation-error {
+      color: var(--error-red);
+      font-size: 0.8rem;
+      margin-top: 0.35rem;
+      display: none;
+    }
+
+    .form-group.has-error .form-input,
+    .form-group.has-error .form-select,
+    .form-group.has-error .form-textarea,
+    .form-group.has-error .phone-input-wrapper .form-input,
+    .form-group.has-error .phone-input-wrapper .phone-prefix {
+      border-color: var(--error-red);
+    }
+
+    .form-group.has-error .validation-error {
+      display: block;
+    }
+
+    /* Success Screen */
+    .success-screen-wrapper {
+      display: none;
+      text-align: center;
+      animation: fadeIn 0.5s ease forwards;
+    }
+
+    .success-icon-container {
+      width: 80px;
+      height: 80px;
+      border: 3px solid var(--success-green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      color: var(--success-green);
+      font-size: 2.5rem;
+      animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+    }
+
+    @keyframes scaleUp {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .success-title {
+      font-family: var(--font-display);
+      font-size: 3rem;
+      text-transform: uppercase;
+      color: var(--success-green);
+      margin-bottom: 1rem;
+    }
+
+    .success-message {
+      font-size: 1.125rem;
+      color: var(--muted-text);
+      max-width: 600px;
+      margin: 0 auto 2.5rem;
+      line-height: 1.7;
+    }
+
+    .success-message strong {
+      color: var(--white);
+    }
+
+    .reference-box {
+      background-color: var(--black);
+      border: 1px dashed var(--border-gray);
+      padding: 1rem 2rem;
+      border-radius: 4px;
+      display: inline-block;
+      margin-bottom: 3rem;
+    }
+
+    .reference-label {
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      font-family: var(--font-subheading);
+      letter-spacing: 0.1em;
+      color: var(--muted-text);
+      margin-bottom: 0.25rem;
+    }
+
+    .reference-id {
+      font-family: var(--font-subheading);
+      font-size: 1.75rem;
+      color: var(--orange);
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    /* Accordion styling for FAQ */
+    .faq-accordion {
+      max-width: 800px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .faq-item {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: all 0.3s;
+    }
+
+    .faq-header {
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .faq-question {
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: var(--white);
+      transition: color 0.3s;
+    }
+
+    .faq-icon {
+      font-size: 1.5rem;
+      color: var(--orange);
+      transition: transform 0.4s;
+    }
+
+    .faq-panel {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      border-left: 3px solid var(--orange);
+    }
+
+    .faq-answer {
+      padding: 0 2rem 1.5rem 2rem;
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      line-height: 1.7;
+    }
+
+    .faq-item.open .faq-question {
+      color: var(--orange);
+    }
+
+    .faq-item.open .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    /* Science / Research items */
+    .science-marquee {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .science-badge {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--white);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      padding: 0.75rem 1.75rem;
+      border-radius: 9999px;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .science-center-statement {
+      text-align: center;
+      font-family: var(--font-body);
+      font-size: clamp(1.25rem, 2.5vw, 1.75rem);
+      margin-bottom: 3rem;
+      font-weight: 500;
+    }
+
+    .science-data-row {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .science-data-item {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted-text);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .science-data-num {
+      color: var(--orange);
+      font-size: 2rem;
+    }
+
+    /* Reach & badges */
+    .reach-badges {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+      margin-bottom: 4rem;
+    }
+
+    .reach-badge {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--orange);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      padding: 0.75rem 2rem;
+      border-radius: 4px;
+    }
+
+    .geo-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      text-align: center;
+      margin-bottom: 4rem;
+    }
+
+    .geo-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 2.5rem 2rem;
+    }
+
+    .geo-emoji {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      display: block;
+    }
+
+    .geo-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.5rem;
+    }
+
+    .geo-desc {
+      color: var(--muted-text);
+      font-size: 0.9rem;
+    }
+
+    /* Final CTA mesh animation */
+    .cta-mesh-section {
+      background: radial-gradient(circle at 50% 50%, rgba(242, 101, 34, 0.15) 0%, var(--black) 80%);
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .final-cta-bebas {
+      font-family: var(--font-display);
+      font-size: clamp(2.5rem, 5vw, 4.5rem);
+      line-height: 1.1;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+      color: var(--white);
+    }
+
+    .final-cta-sub {
+      font-size: 1.2rem;
+      color: var(--muted-text);
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      line-height: 1.7;
+    }
+
+    .final-cta-massive {
+      font-family: var(--font-display);
+      font-size: clamp(4rem, 10vw, 8.5rem);
+      line-height: 0.9;
+      color: var(--orange);
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+      letter-spacing: 0.02em;
+    }
+
+    .cta-trust-text {
+      color: var(--muted-text);
+      font-size: 0.875rem;
+      margin-top: 1rem;
+    }
+
+    /* Contact Details columns */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 4rem;
+    }
+
+    .contact-card {
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      border-radius: 4px;
+      padding: 3rem 2rem;
+      text-align: center;
+    }
+
+    .contact-icon {
+      font-size: 2.5rem;
+      color: var(--orange);
+      margin-bottom: 1.5rem;
+      display: block;
+    }
+
+    .contact-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 1rem;
+      color: var(--white);
+    }
+
+    .contact-detail {
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .contact-detail a {
+      color: var(--orange);
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-detail a:hover {
+      color: var(--white);
+    }
+
+    .social-row {
+      display: flex;
+      justify-content: center;
+      gap: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .social-link {
+      color: var(--orange);
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      text-decoration: none;
+      transition: transform 0.3s, color 0.3s;
+    }
+
+    .social-link:hover {
+      color: var(--white);
+      transform: translateY(-2px);
+    }
+
+    /* Floating Utilities */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 56px;
+      height: 56px;
+      background-color: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+      z-index: 998;
+      cursor: pointer;
+      text-decoration: none;
+      color: var(--white);
+      font-size: 2rem;
+      transition: all 0.3s;
+      animation: whatsapp-pulse 2s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes whatsapp-pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.4); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    .scroll-progress-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background-color: transparent;
+      z-index: 1001;
+    }
+
+    .scroll-progress-bar {
+      height: 100%;
+      width: 0;
+      background-color: var(--orange);
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 6.5rem;
+      right: 2rem;
+      width: 44px;
+      height: 44px;
+      background-color: var(--elevated-black);
+      border: 1px solid var(--border-gray);
+      color: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(20px);
+      transition: all 0.4s ease;
+      z-index: 997;
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .back-to-top:hover {
+      border-color: var(--orange);
+      background-color: var(--orange-dim);
+    }
+
+    /* Footer */
+    footer {
+      background-color: var(--dark-gray);
+      border-top: 1px solid var(--border-gray);
+      padding: 5rem 0 0 0;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2.5fr 1.5fr 2fr 2fr;
+      gap: 3rem;
+      margin-bottom: 4rem;
+    }
+
+    .footer-logo-col {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .footer-tagline {
+      color: var(--muted-text);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-subheading);
+      font-weight: 700;
+      font-size: 1.15rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--white);
+      margin-bottom: 1.5rem;
+    }
+
+    .footer-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .footer-link-item a {
+      color: var(--muted-text);
+      text-decoration: none;
+      transition: color 0.3s;
+      font-size: 0.95rem;
+    }
+
+    .footer-link-item a:hover {
+      color: var(--orange);
+    }
+
+    .footer-bottom-bar {
+      background-color: var(--elevated-black);
+      border-top: 1px solid var(--border-gray);
+      padding: 1.5rem 0;
+    }
+
+    .footer-bottom-flex {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .footer-copyright {
+      color: var(--muted-text);
+      font-size: 0.85rem;
+    }
+
+    .footer-legal-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .footer-legal-link a {
+      color: var(--muted-text);
+      text-decoration: none;
+      font-size: 0.85rem;
+      transition: color 0.3s;
+    }
+
+    .footer-legal-link a:hover {
+      color: var(--orange);
+    }
+
+    /* Screen reader utility */
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    /* Focus styling */
+    :focus-visible {
+      outline: 2px solid var(--orange);
+      outline-offset: 4px;
+    }
+
+    /* Media Queries for Responsiveness */
+    @media (max-width: 1200px) {
+      .testimonial-card {
+        flex: 0 0 calc((100% - 3rem) / 3);
+      }
+    }
+
+    @media (max-width: 1024px) {
+      .audience-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .pillars-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .about-split {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-menu, .nav-cta-btn {
+        display: none;
+      }
+      .hamburger {
+        display: flex;
+      }
+      .dashboard-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .logos-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .audience-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .programs-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .outcomes-grid {
+        grid-template-columns: 1fr;
+      }
+      .reasons-columns {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+      }
+      .delivery-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+      .form-group-full {
+        grid-column: span 1;
+      }
+      .radio-cards-grid {
+        grid-template-columns: 1fr;
+      }
+      .geo-grid {
+        grid-template-columns: 1fr;
+      }
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+      .testimonial-card {
+        flex: 0 0 calc((100% - 1.5rem) / 2);
+      }
+    }
+
+    @media (max-width: 480px) {
+      .dashboard-grid {
+        grid-template-columns: 1fr;
+      }
+      .logos-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+      .programs-grid {
+        grid-template-columns: 1fr;
+      }
+      .testimonial-card {
+        flex: 0 0 100%;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom-flex {
+        flex-direction: column;
+        text-align: center;
+      }
+      .footer-legal-links {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+    }
+
+    /* Reduced Motion Preference Support */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-delay: -1ms !important;
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        background-attachment: initial !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0s !important;
+        transition-delay: 0s !important;
+      }
+      .fade-up, .fade-left, .fade-right {
+        opacity: 1 !important;
+        transform: none !important;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Full-Page Fade-In Loader -->
+  <div id="loader">
+    <div class="spinner"></div>
+    <div class="logo-title">SAJAN SHAH</div>
+    <div class="logo-subtitle">Customised Programs</div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scrollBar"></div>
+  </div>
+
+  <!-- Cursor Follower -->
+  <div class="cursor-dot" id="cursorDot"></div>
+
+  <!-- 1. STICKY NAVIGATION BAR -->
+  <header id="mainHeader">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-container" aria-label="Sajan Shah Home">
+        <span class="logo-title">SAJAN SHAH</span>
+        <span class="logo-subtitle">Customised Programs</span>
+      </a>
+      
+      <nav aria-label="Main Navigation">
+        <ul class="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#programs" class="nav-link">Programs</a></li>
+          <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
+          <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+          <li><a href="#faq" class="nav-link">FAQ</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <a href="#registration" class="btn btn-primary nav-cta-btn" id="nav-cta-btn">
+        Request Your Program →
+      </a>
+
+      <button class="hamburger" id="hamburgerBtn" aria-label="Open Mobile Menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Navigation -->
+  <div class="mobile-menu-overlay" id="mobileMenu">
+    <nav aria-label="Mobile Navigation">
+      <ul class="mobile-nav-list">
+        <li><a href="#about" class="mobile-nav-link" style="animation-delay: 0.1s;">About</a></li>
+        <li><a href="#programs" class="mobile-nav-link" style="animation-delay: 0.2s;">Programs</a></li>
+        <li><a href="#outcomes" class="mobile-nav-link" style="animation-delay: 0.3s;">Outcomes</a></li>
+        <li><a href="#how-it-works" class="mobile-nav-link" style="animation-delay: 0.4s;">How It Works</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link" style="animation-delay: 0.5s;">Testimonials</a></li>
+        <li><a href="#faq" class="mobile-nav-link" style="animation-delay: 0.6s;">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link" style="animation-delay: 0.7s;">Contact</a></li>
+        <li>
+          <a href="#registration" class="btn btn-primary mobile-nav-link" style="animation-delay: 0.8s; font-size: 1.25rem; margin-top: 1.5rem;">
+            Request Program →
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+
+  <main>
+    
+    <!-- 2. HERO SECTION -->
+    <section id="hero">
+      <canvas id="particle-canvas"></canvas>
+      <svg class="hero-grid-svg" xmlns="http://www.w3.org/2000/svg" width="100%" height="100%">
+        <defs>
+          <pattern id="grid" width="60" height="60" patternUnits="userSpaceOnUse">
+            <path d="M 60 0 L 0 0 0 60" fill="none" stroke="#f26522" stroke-width="1"/>
+          </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#grid)" />
+      </svg>
+      
+      <div class="hero-content">
+        <div class="hero-badge fade-up">
+          INDIA'S MOST TRUSTED TRANSFORMATION PARTNER
+        </div>
+        
+        <h1 class="hero-title fade-up delay-100">
+          NOT ANOTHER ORDINARY SESSION.
+        </h1>
+        
+        <div class="typewriter-container fade-up delay-200">
+          <span id="typewriter"></span><span class="typewriter-cursor"></span>
+        </div>
+        
+        <p class="hero-subtitle fade-up delay-300">
+          From students to corporates, we design high-impact customised programs based on psychology, neuroscience, motivation, leadership, emotional intelligence, and behavioural transformation.
+        </p>
+        
+        <div class="hero-ctas fade-up delay-400">
+          <a href="#registration" class="btn btn-primary btn-large">
+            Request Customised Program →
+          </a>
+          <a href="#programs" class="btn btn-secondary btn-large">
+            See Programs We Customise ↓
+          </a>
+        </div>
+        
+        <div class="trust-ticker fade-up delay-500">
+          <span>16+ Years</span>
+          <span>15M+ Impacted</span>
+          <span>Research-Backed</span>
+          <span>Trusted Across India</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. TRUSTED TRANSFORMATION PARTNER — IMPACT DASHBOARD -->
+    <section class="bg-gray-section" id="dashboard">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">TRUSTED TRANSFORMATION PARTNER</span>
+          <h2 class="section-title fade-up delay-100">Numbers That Define Our Impact</h2>
+        </div>
+
+        <div class="dashboard-grid">
+          <div class="counter-card fade-up">
+            <div class="counter-number" data-target="16">0</div>
+            <div class="counter-label">Years of Experience</div>
+          </div>
+          <div class="counter-card fade-up delay-100">
+            <div class="counter-number" data-target="15000000">0</div>
+            <div class="counter-label">Students, Parents, Teachers & Professionals Impacted</div>
+          </div>
+          <div class="counter-card fade-up delay-200">
+            <div class="counter-number" data-target="100">0</div>
+            <div class="counter-label">Research & Neuroscience Based</div>
+          </div>
+          <div class="counter-card fade-up delay-300">
+            <div class="counter-number">Pan-India</div>
+            <div class="counter-label">Trusted by Schools, Colleges, Corporates & Organisations</div>
+          </div>
+        </div>
+
+        <!-- Auto scrolling infinite marquee -->
+        <div class="marquee-container">
+          <div class="marquee-content" id="marqueeContent">
+            <span class="marquee-item">Schools</span>
+            <span class="marquee-item">Colleges</span>
+            <span class="marquee-item">Coaching Institutes</span>
+            <span class="marquee-item">Corporates</span>
+            <span class="marquee-item">Organisations</span>
+            <span class="marquee-item">Parents</span>
+            <span class="marquee-item">Teachers</span>
+            <span class="marquee-item">Students</span>
+            <span class="marquee-item">Leadership Teams</span>
+            <span class="marquee-item">Employees & Staff</span>
+          </div>
+        </div>
+
+        <!-- Client logos grid -->
+        <div class="client-logos-section">
+          <div class="logos-grid">
+            <div class="logo-slot">Institution Logo</div>
+            <div class="logo-slot">Corporate Logo</div>
+            <div class="logo-slot">School Logo</div>
+            <div class="logo-slot">College Logo</div>
+            <div class="logo-slot">Academy Logo</div>
+            <div class="logo-slot">Company Logo</div>
+            <div class="logo-slot">NGO Logo</div>
+            <div class="logo-slot">Enterprise Logo</div>
+            <div class="logo-slot">Society Logo</div>
+            <div class="logo-slot">Institute Logo</div>
+            <div class="logo-slot">Association Logo</div>
+            <div class="logo-slot">Federation Logo</div>
+            <div class="logo-slot">Foundation Logo</div>
+            <div class="logo-slot">University Logo</div>
+            <div class="logo-slot">Syndicate Logo</div>
+          </div>
+          <div class="logo-caption">
+            Trusted by organisations across India — logos available upon deployment.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. HERO STATEMENT — NOT ANOTHER SESSION -->
+    <section class="bg-black-section" id="statement">
+      <div class="container text-center">
+        <div class="problem-box">
+          <span class="eyebrow fade-up">THE PROBLEM WITH MOST PROGRAMS</span>
+          
+          <ul class="strikethrough-list">
+            <li class="strikethrough-item fade-up">
+              Generic motivational talks.
+              <span class="strikethrough-line"></span>
+            </li>
+            <li class="strikethrough-item fade-up delay-100">
+              One-size-fits-all sessions.
+              <span class="strikethrough-line"></span>
+            </li>
+            <li class="strikethrough-item fade-up delay-200">
+              Temporary inspiration with zero follow-through.
+              <span class="strikethrough-line"></span>
+            </li>
+            <li class="strikethrough-item fade-up delay-300">
+              Sessions designed for the speaker, not the audience.
+              <span class="strikethrough-line"></span>
+            </li>
+          </ul>
+
+          <div class="divider-line"></div>
+
+          <h2 class="problem-title fade-up">
+            YOUR AUDIENCE DESERVES MORE THAN THAT.
+          </h2>
+          
+          <p class="section-subtitle fade-up" style="margin-left: auto; margin-right: auto;">
+            Every organisation has unique people, unique challenges, and unique goals. Your program should be built to match — not borrowed from a template.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WHO ARE THESE PROGRAMS FOR? -->
+    <section class="bg-gray-section" id="about">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">AUDIENCE</span>
+          <h2 class="section-title fade-up delay-100">Who Are These Programs For?</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+            We craft customized training modules specific to each unique group of learners.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+          <div class="audience-card fade-up">
+            <span class="audience-emoji">🏫</span>
+            <div class="audience-label">Schools</div>
+            <div class="audience-desc">Students, teachers & leadership development</div>
+          </div>
+          <div class="audience-card fade-up delay-100">
+            <span class="audience-emoji">🎓</span>
+            <div class="audience-label">Colleges</div>
+            <div class="audience-desc">Campus communities & faculty alignment</div>
+          </div>
+          <div class="audience-card fade-up delay-200">
+            <span class="audience-emoji">📚</span>
+            <div class="audience-label">Coaching Institutes</div>
+            <div class="audience-desc">Academic excellence & exam preparation</div>
+          </div>
+          <div class="audience-card fade-up delay-300">
+            <span class="audience-emoji">🏢</span>
+            <div class="audience-label">Corporates</div>
+            <div class="audience-desc">Employees, managers & executive alignment</div>
+          </div>
+          <div class="audience-card fade-up delay-400">
+            <span class="audience-emoji">🌐</span>
+            <div class="audience-label">Organisations</div>
+            <div class="audience-desc">Non-profits, associations & communities</div>
+          </div>
+          <div class="audience-card fade-up">
+            <span class="audience-emoji">👨👩👧</span>
+            <div class="audience-label">Parents</div>
+            <div class="audience-desc">Empowered parenting & home relationships</div>
+          </div>
+          <div class="audience-card fade-up delay-100">
+            <span class="audience-emoji">👩🏫</span>
+            <div class="audience-label">Teachers</div>
+            <div class="audience-desc">Classroom management & teaching quality</div>
+          </div>
+          <div class="audience-card fade-up delay-200">
+            <span class="audience-emoji">🎒</span>
+            <div class="audience-label">Students</div>
+            <div class="audience-desc">Goal setting, career clarity & confidence</div>
+          </div>
+          <div class="audience-card fade-up delay-300">
+            <span class="audience-emoji">👔</span>
+            <div class="audience-label">Leadership Teams</div>
+            <div class="audience-desc">Strategy, culture & management growth</div>
+          </div>
+          <div class="audience-card fade-up delay-400">
+            <span class="audience-emoji">👥</span>
+            <div class="audience-label">Employees & Staff</div>
+            <div class="audience-desc">Productivity, soft skills & alignment</div>
+          </div>
+        </div>
+
+        <div class="audience-callout fade-up">
+          "If your audience is human, we can design a program for them."
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. PROGRAMS WE CUSTOMISE -->
+    <section class="bg-black-section" id="programs">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">PROGRAM CATALOGUE</span>
+          <h2 class="section-title fade-up delay-100">Programs We Customise</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+            13 High-Impact Program Categories — All Built For Your Specific Goals
+          </p>
+        </div>
+
+        <!-- Filter tabs -->
+        <div class="filter-tabs fade-up">
+          <button class="filter-btn active" data-filter="All">All</button>
+          <button class="filter-btn" data-filter="Students">Students</button>
+          <button class="filter-btn" data-filter="Corporates">Corporates</button>
+          <button class="filter-btn" data-filter="Leadership">Leadership</button>
+          <button class="filter-btn" data-filter="Wellness">Wellness</button>
+          <button class="filter-btn" data-filter="Education">Education</button>
+        </div>
+
+        <!-- Programs Card Grid -->
+        <div class="programs-grid" id="programsGrid">
+          
+          <!-- Card 1 -->
+          <div class="program-card-wrapper" data-tags="Students, Corporates, Education">
+            <div class="program-card">
+              <div class="program-icon">🔥</div>
+              <h3 class="program-name">Motivation Programs</h3>
+              <p class="program-desc">Reignite drive, discipline and ambition in any audience.</p>
+              <div class="program-tags">
+                <span class="program-tag">Students</span>
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="program-card-wrapper" data-tags="Corporates, Leadership">
+            <div class="program-card">
+              <div class="program-icon">🏢</div>
+              <h3 class="program-name">Corporate Training</h3>
+              <p class="program-desc">Performance, culture and productivity transformation for teams.</p>
+              <div class="program-tags">
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="program-card-wrapper" data-tags="Leadership, Corporates">
+            <div class="program-card">
+              <div class="program-icon">🏆</div>
+              <h3 class="program-name">Leadership & Team Building</h3>
+              <p class="program-desc">Build high-performance leaders and collaborative teams.</p>
+              <div class="program-tags">
+                <span class="program-tag">Leadership</span>
+                <span class="program-tag">Corporates</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="program-card-wrapper" data-tags="Students, Education">
+            <div class="program-card">
+              <div class="program-icon">🎒</div>
+              <h3 class="program-name">Student Transformation</h3>
+              <p class="program-desc">Academic excellence, confidence and life-skills development.</p>
+              <div class="program-tags">
+                <span class="program-tag">Students</span>
+                <span class="program-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="program-card-wrapper" data-tags="Education, Wellness">
+            <div class="program-card">
+              <div class="program-icon">👨👩👧</div>
+              <h3 class="program-name">Parenting Workshops</h3>
+              <p class="program-desc">Empowering parents with psychology-based parenting tools.</p>
+              <div class="program-tags">
+                <span class="program-tag">Education</span>
+                <span class="program-tag">Wellness</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 6 -->
+          <div class="program-card-wrapper" data-tags="Education">
+            <div class="program-card">
+              <div class="program-icon">👩🏫</div>
+              <h3 class="program-name">Teacher Training</h3>
+              <p class="program-desc">Neuroscience-based classroom transformation for educators.</p>
+              <div class="program-tags">
+                <span class="program-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 7 -->
+          <div class="program-card-wrapper" data-tags="Wellness, Corporates, Education">
+            <div class="program-card">
+              <div class="program-icon">🧠</div>
+              <h3 class="program-name">Mental Health & Wellness</h3>
+              <p class="program-desc">Stress management, emotional resilience and mental clarity.</p>
+              <div class="program-tags">
+                <span class="program-tag">Wellness</span>
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 8 -->
+          <div class="program-card-wrapper" data-tags="Students, Corporates, Leadership">
+            <div class="program-card">
+              <div class="program-icon">🗣️</div>
+              <h3 class="program-name">Communication & Confidence</h3>
+              <p class="program-desc">Expressive communication and unshakeable self-belief.</p>
+              <div class="program-tags">
+                <span class="program-tag">Students</span>
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 9 -->
+          <div class="program-card-wrapper" data-tags="Corporates, Leadership, Students">
+            <div class="program-card">
+              <div class="program-icon">⚡</div>
+              <h3 class="program-name">Productivity & Performance</h3>
+              <p class="program-desc">Peak performance systems for individuals and teams.</p>
+              <div class="program-tags">
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Leadership</span>
+                <span class="program-tag">Students</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 10 -->
+          <div class="program-card-wrapper" data-tags="Students, Education">
+            <div class="program-card">
+              <div class="program-icon">🧬</div>
+              <h3 class="program-name">Study Skills & Memory</h3>
+              <p class="program-desc">Brain-based learning, retention and exam performance.</p>
+              <div class="program-tags">
+                <span class="program-tag">Students</span>
+                <span class="program-tag">Education</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 11 -->
+          <div class="program-card-wrapper" data-tags="Students, Corporates, Leadership">
+            <div class="program-card">
+              <div class="program-icon">🌟</div>
+              <h3 class="program-name">Personality Development</h3>
+              <p class="program-desc">Building identity, influence and personal excellence.</p>
+              <div class="program-tags">
+                <span class="program-tag">Students</span>
+                <span class="program-tag">Corporates</span>
+                <span class="program-tag">Leadership</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 12 -->
+          <div class="program-card-wrapper" data-tags="All">
+            <div class="program-card">
+              <div class="program-icon">🎤</div>
+              <h3 class="program-name">Annual Events & Seminars</h3>
+              <p class="program-desc">Large-format high-impact institutional events.</p>
+              <div class="program-tags">
+                <span class="program-tag">All</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 13 -->
+          <div class="program-card-wrapper" data-tags="Corporates">
+            <div class="program-card">
+              <div class="program-icon">🤝</div>
+              <h3 class="program-name">Employee Engagement</h3>
+              <p class="program-desc">Culture-building, morale and workforce alignment.</p>
+              <div class="program-tags">
+                <span class="program-tag">Corporates</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. EXPECTED OUTCOMES -->
+    <section class="bg-gray-section" id="outcomes">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">WHAT YOU'LL ACHIEVE</span>
+          <h2 class="section-title fade-up delay-100">What Outcomes Can You Expect?</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+            Every program is designed to deliver measurable, lasting transformation.
+          </p>
+        </div>
+
+        <div class="outcomes-grid">
+          <!-- Left Column -->
+          <div class="outcome-column">
+            <div class="outcome-item fade-left">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Higher motivation & discipline</span>
+                <span class="outcome-desc">Re-engage audience interest and align goals with actions.</span>
+              </div>
+            </div>
+            
+            <div class="outcome-item fade-left delay-100">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Better communication & teamwork</span>
+                <span class="outcome-desc">Clearer channels, higher collaboration index, and emotional connection.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-left delay-200">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Improved student performance</span>
+                <span class="outcome-desc">Strategic study plans, exam tactics, and memory improvement.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-left delay-300">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Stronger confidence & self-esteem</span>
+                <span class="outcome-desc">Eradicate stage fear, develop strong voice modulation, and build presence.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-left delay-400">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Leadership development</span>
+                <span class="outcome-desc">Develop critical planning skills and strategic organizational mindset.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right Column -->
+          <div class="outcome-column">
+            <div class="outcome-item fade-right">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Emotional resilience</span>
+                <span class="outcome-desc">Manage stress, handle peer pressure, and conquer anxiety issues.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-right delay-100">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Better focus & productivity</span>
+                <span class="outcome-desc">Reduce screen distractions and implement structured work routines.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-right delay-200">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Positive behavioural transformation</span>
+                <span class="outcome-desc">Subtle but permanent adjustments in micro-habits and team cultures.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-right delay-200">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Stronger parent-teacher-student connection</span>
+                <span class="outcome-desc">Empathetic parenting and collaborative educational eco-systems.</span>
+              </div>
+            </div>
+
+            <div class="outcome-item fade-right delay-300">
+              <span class="outcome-check">✅</span>
+              <div class="outcome-text-wrapper">
+                <span class="outcome-label">Long-term mindset shift</span>
+                <span class="outcome-desc">Transition from a static growth plateau to a highly adaptive mindset.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="outcomes-footer-banner fade-up">
+          "These are not temporary outcomes. These are permanent shifts in thinking, behaviour and performance."
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. THE CUSTOMISATION DIFFERENCE -->
+    <section class="bg-black-section" id="difference">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">WHY CUSTOMISE</span>
+          <h2 class="section-title fade-up delay-100">Why Generic Programs Fail. Why Customised Programs Win.</h2>
+        </div>
+
+        <div class="comparison-wrapper fade-up">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>❌ Generic Programs</th>
+                <th>✅ Our Customised Programs</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Same content for every audience</td>
+                <td>Built specifically for your people</td>
+              </tr>
+              <tr>
+                <td>Motivational but not actionable</td>
+                <td>Practical with real implementation</td>
+              </tr>
+              <tr>
+                <td>Speaker-focused delivery</td>
+                <td>Audience-focused experience</td>
+              </tr>
+              <tr>
+                <td>No connection to your challenges</td>
+                <td>Designed around your exact challenges</td>
+              </tr>
+              <tr>
+                <td>Forgotten within a week</td>
+                <td>Long-term behavioural shifts</td>
+              </tr>
+              <tr>
+                <td>One-time performance</td>
+                <td>Ongoing impact and follow-through</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. HOW IT WORKS — 5-STEP PROCESS -->
+    <section class="bg-gray-section" id="how-it-works">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">THE PROCESS</span>
+          <h2 class="section-title fade-up delay-100">How It Works</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+            From your first enquiry to full program execution — a seamless 5-step journey.
+          </p>
+        </div>
+
+        <div class="timeline-container">
+          <!-- Timeline Line SVG -->
+          <svg class="timeline-svg-line">
+            <line x1="2" y1="0" x2="2" y2="100%" stroke="var(--border-gray)" stroke-width="4"/>
+            <path id="timeline-draw-path" d="M 2 0 L 2 1000" fill="none" stroke="var(--orange)" stroke-width="4" stroke-dasharray="1000" stroke-dashoffset="1000"/>
+          </svg>
+
+          <!-- Step 1 -->
+          <div class="timeline-step fade-up">
+            <div class="step-number-container">1</div>
+            <div class="step-content-card">
+              <h3 class="step-title">Fill The Requirement Form</h3>
+              <p class="step-desc">Submit your basic details and we'll reach out to understand your needs in depth.</p>
+            </div>
+          </div>
+
+          <!-- Step 2 -->
+          <div class="timeline-step fade-up delay-100">
+            <div class="step-number-container">2</div>
+            <div class="step-content-card">
+              <h3 class="step-title">Share Your Challenges & Goals</h3>
+              <p class="step-desc">A focused conversation where we understand your audience, pain points and transformation goals.</p>
+            </div>
+          </div>
+
+          <!-- Step 3 -->
+          <div class="timeline-step fade-up delay-200">
+            <div class="step-number-container">3</div>
+            <div class="step-content-card">
+              <h3 class="step-title">Strategy Discussion With Our Team</h3>
+              <p class="step-desc">Our program design team analyses your requirements and maps out the ideal program structure.</p>
+            </div>
+          </div>
+
+          <!-- Step 4 -->
+          <div class="timeline-step fade-up delay-300">
+            <div class="step-number-container">4</div>
+            <div class="step-content-card">
+              <h3 class="step-title">Customised Program Designed For You</h3>
+              <p class="step-desc">Your exclusive program is built — content, methodology, timing, format and delivery style.</p>
+            </div>
+          </div>
+
+          <!-- Step 5 -->
+          <div class="timeline-step fade-up delay-400">
+            <div class="step-number-container">5</div>
+            <div class="step-content-card">
+              <h3 class="step-title">Execution, Engagement & Impact</h3>
+              <p class="step-desc">We deliver a high-impact session your audience will remember long after it ends.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center" style="margin-top: 4rem;">
+          <p class="section-subtitle" style="margin: 0 auto 2rem;">Ready to begin?</p>
+          <a href="#registration" class="btn btn-primary">Start With Step 1 →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. WHAT WE UNDERSTAND ABOUT YOUR NEEDS -->
+    <section class="bg-black-section" id="needs">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">WHAT WE LEARN ABOUT YOU</span>
+          <h2 class="section-title fade-up delay-100">Our Team Will Understand Everything About You</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+            Before we write a single word of your program structure, we profile your requirements.
+          </p>
+        </div>
+
+        <div class="pillars-grid">
+          <!-- Card 1 -->
+          <div class="pillar-card fade-up">
+            <div class="pillar-icon">🎯</div>
+            <h3 class="pillar-name">Your Audience</h3>
+            <p class="pillar-desc">Who will attend, their age bracket, educational background, and what key triggers drive them.</p>
+          </div>
+          <!-- Card 2 -->
+          <div class="pillar-card fade-up delay-100">
+            <div class="pillar-icon">⚡</div>
+            <h3 class="pillar-name">Your Challenges</h3>
+            <p class="pillar-desc">What current systemic problems, cultural issues, or individual bottlenecks need to be solved.</p>
+          </div>
+          <!-- Card 3 -->
+          <div class="pillar-card fade-up delay-200">
+            <div class="pillar-icon">📈</div>
+            <h3 class="pillar-name">Expected Outcomes</h3>
+            <p class="pillar-desc">What tangible changes you need to observe in the hours and months following our program.</p>
+          </div>
+          <!-- Card 4 -->
+          <div class="pillar-card fade-up">
+            <div class="pillar-icon">⏱️</div>
+            <h3 class="pillar-name">Program Duration</h3>
+            <p class="pillar-desc">Hours, full days, or an ongoing developmental series over multiple weeks or months.</p>
+          </div>
+          <!-- Card 5 -->
+          <div class="pillar-card fade-up delay-100">
+            <div class="pillar-icon">🖥️</div>
+            <h3 class="pillar-name">Online or Offline</h3>
+            <p class="pillar-desc">Whether you require an immersive in-person retreat, a virtual session, or a hybrid layout.</p>
+          </div>
+          <!-- Card 6 -->
+          <div class="pillar-card fade-up delay-200">
+            <div class="pillar-icon">🛠</div>
+            <h3 class="pillar-name">Customisation Level</h3>
+            <p class="pillar-desc">Adjusting language formats, specific industry metaphors, case studies, or physical exercises.</p>
+          </div>
+        </div>
+
+        <div class="audience-callout fade-up" style="margin-top: 3rem;">
+          "...And then suggest the best possible solution for your exact situation."
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. ABOUT SAJAN SHAH -->
+    <section class="bg-gray-section" id="speaker">
+      <div class="container">
+        <div class="about-split">
+          <!-- Left side Portrait -->
+          <div class="fade-left">
+            <div class="portrait-wrapper">
+              <div class="portrait-frame">
+                <span class="portrait-placeholder-icon">👤</span>
+                <div class="portrait-accent-corner"></div>
+              </div>
+            </div>
+            <div class="credentials-pills">
+              <div class="credential-pill">🏆 Memory Man Of India</div>
+              <div class="credential-pill">🕊️ Speaker At World Religion Parliament</div>
+              <div class="credential-pill">⭐ 16+ Years Transforming Lives</div>
+            </div>
+          </div>
+
+          <!-- Right side Bio -->
+          <div class="fade-right">
+            <span class="eyebrow">THE MAN BEHIND EVERY PROGRAM</span>
+            <h2 class="section-title" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem;">Why Sajan Shah?</h2>
+            
+            <div class="about-bio-badges">
+              <span class="about-bio-badge">Memory Man Of India</span>
+              <span class="about-bio-badge">Speaker At World Religion Parliament</span>
+              <span class="about-bio-badge">Transformation Expert</span>
+            </div>
+
+            <p class="about-text">
+              For over 16 years, Sajan Shah has helped millions of students, teachers, parents, employees, and organisations unlock their potential through psychology, neuroscience, and human behavioural science. His programs aren't built from theory — they're built from 16 years of standing in front of real audiences, solving real problems.
+            </p>
+
+            <blockquote class="about-quote">
+              "Every audience deserves a program that was made for them — not borrowed from someone else."
+            </blockquote>
+
+            <div class="strength-tags">
+              <span class="strength-tag">Deep audience psychology understanding</span>
+              <span class="strength-tag">Neuroscience-based program design</span>
+              <span class="strength-tag">High-energy, emotionally connected delivery</span>
+              <span class="strength-tag">Practical implementation focus</span>
+              <span class="strength-tag">Long-term behavioural transformation</span>
+            </div>
+
+            <p class="about-bottom-bold">
+              Sajan Shah's programs don't just inspire in the room. They change how people think and act for years after.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. TESTIMONIALS -->
+    <section class="bg-black-section" id="testimonials">
+      <div class="container">
+        <div>
+          <span class="eyebrow fade-up">WHAT THEY SAY</span>
+          <h2 class="section-title fade-up delay-100">What Organisations & Institutions Say</h2>
+        </div>
+
+        <div class="testimonial-carousel-container fade-up">
+          <div class="testimonial-track" id="testimonialTrack">
+            
+            <!-- Slide 1 -->
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "One of the most engaging and transformational sessions our students have experienced."
+              </p>
+              <div class="testimonial-author-wrapper">
+                <div class="testimonial-author">School Principal</div>
+                <div class="testimonial-role">Educational Institution, India</div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "The program was practical, emotional, scientific, and highly impact-oriented."
+              </p>
+              <div class="testimonial-author-wrapper">
+                <div class="testimonial-author">Corporate HR Head</div>
+                <div class="testimonial-role">Leading Organisation</div>
+              </div>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Students were deeply connected throughout the session. Outstanding delivery and execution."
+              </p>
+              <div class="testimonial-author-wrapper">
+                <div class="testimonial-author">Institution Director</div>
+                <div class="testimonial-role">Educational Organisation</div>
+              </div>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "Finally a customised program that actually understood our team's challenges."
+              </p>
+              <div class="testimonial-author-wrapper">
+                <div class="testimonial-author">L&D Manager</div>
+                <div class="testimonial-role">Corporate Team</div>
+              </div>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="testimonial-card">
+              <p class="testimonial-quote">
+                "The before-and-after difference in our staff's mindset was visible from day one."
+              </p>
+              <div class="testimonial-author-wrapper">
+                <div class="testimonial-author">Academic Coordinator</div>
+                <div class="testimonial-role">College Leadership</div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="testimonial-controls">
+            <div class="carousel-dots" id="carouselDots">
+              <!-- JS will inject dots dynamically -->
+            </div>
+            
+            <div class="carousel-arrows">
+              <button class="carousel-arrow" id="prevBtn" aria-label="Previous Testimonial">←</button>
+              <button class="carousel-arrow" id="nextBtn" aria-label="Next Testimonial">→</button>
+            </div>
+          </div>
+
+          <div class="carousel-progress-container">
+            <div class="carousel-progress-bar" id="carouselProgressBar"></div>
+          </div>
+        </div>
+
+        <div class="testimonial-bottom-quote fade-up">
+          "Audiences today don't need temporary motivation. They need behavioural change."
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. WHY ORGANISATIONS CHOOSE SAJAN SHAH -->
+    <section class="bg-gray-section" id="choose">
+      <div class="container">
+        <div class="reasons-box">
+          <div class="text-center">
+            <span class="eyebrow fade-up">THE REASON BEHIND THE CHOICE</span>
+            <h2 class="section-title fade-up delay-100">Why Organisations Choose Sajan Shah</h2>
+            <div class="choice-subtitle fade-up delay-200">Because audiences today do not need temporary motivation.</div>
+          </div>
+
+          <div class="reasons-columns">
+            <!-- Left col -->
+            <div>
+              <h3 class="reasons-column-title fade-left">They Need:</h3>
+              <ul class="reasons-list">
+                <li class="reason-item fade-left delay-100">
+                  <span class="reason-icon">🔄</span> Behavioural change
+                </li>
+                <li class="reason-item fade-left delay-200">
+                  <span class="reason-icon">❤️</span> Emotional connection
+                </li>
+                <li class="reason-item fade-left delay-300">
+                  <span class="reason-icon">⚙️</span> Practical execution
+                </li>
+                <li class="reason-item fade-left delay-400">
+                  <span class="reason-icon">🧠</span> Mindset transformation
+                </li>
+                <li class="reason-item fade-left delay-500">
+                  <span class="reason-icon">🎯</span> Long-term impact
+                </li>
+              </ul>
+            </div>
+
+            <!-- Right col -->
+            <div>
+              <h3 class="reasons-column-title fade-right">Every Program Is Built With:</h3>
+              <ul class="reasons-list">
+                <li class="reason-item fade-right delay-100">
+                  <span class="reason-icon">🔍</span> Deep human psychology understanding
+                </li>
+                <li class="reason-item fade-right delay-200">
+                  <span class="reason-icon">⚡</span> Neuroscience of audience behaviour
+                </li>
+                <li class="reason-item fade-right delay-300">
+                  <span class="reason-icon">🗺️</span> Real-world challenge mapping
+                </li>
+                <li class="reason-item fade-right delay-400">
+                  <span class="reason-icon">📊</span> Measurable transformation outcomes
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="reasons-banner fade-up">
+            "Every program is designed with deep understanding of human psychology, neuroscience, audience behaviour, and real-world challenges."
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. PROGRAM DELIVERY MODES -->
+    <section class="bg-black-section" id="delivery">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">DELIVERY OPTIONS</span>
+          <h2 class="section-title fade-up delay-100">Flexible Delivery For Every Organisation</h2>
+        </div>
+
+        <div class="delivery-grid">
+          <!-- Mode 1 -->
+          <div class="delivery-card fade-up">
+            <span class="delivery-icon">🖥️</span>
+            <h3 class="delivery-name">Online / Virtual</h3>
+            <ul class="delivery-features">
+              <li>Live virtual interactive sessions</li>
+              <li>Remote team engagement portals</li>
+              <li>Available nationwide and internationally</li>
+            </ul>
+          </div>
+
+          <!-- Mode 2 -->
+          <div class="delivery-card fade-up delay-100">
+            <span class="delivery-badge">MOST IMPACTFUL</span>
+            <span class="delivery-icon">🏛️</span>
+            <h3 class="delivery-name">Offline / In-Person</h3>
+            <ul class="delivery-features">
+              <li>On-site custom delivery at your venue</li>
+              <li>Immersive high-impact atmosphere</li>
+              <li>Hands-on practical interactions</li>
+            </ul>
+          </div>
+
+          <!-- Mode 3 -->
+          <div class="delivery-card fade-up delay-200">
+            <span class="delivery-icon">🔀</span>
+            <h3 class="delivery-name">Hybrid</h3>
+            <ul class="delivery-features">
+              <li>Combination of physical + digital systems</li>
+              <li>Phased program delivery schedules</li>
+              <li>Ideal for large and multi-branch teams</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="audience-callout fade-up" style="margin-top: 3rem; font-size: 1.15rem; color: var(--muted-text);">
+          "All formats are available. You choose what works best for your team, institution, or organisation."
+        </div>
+      </div>
+    </section>
+
+    <!-- 15. PROGRAM DURATION OPTIONS -->
+    <section class="bg-gray-section" id="durations">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">DURATION</span>
+          <h2 class="section-title fade-up delay-100">Program Duration — You Decide</h2>
+        </div>
+
+        <div class="duration-selector-row fade-up">
+          <button class="duration-pill active" data-duration="1-hour">1 Hour</button>
+          <button class="duration-pill" data-duration="half-day">Half Day</button>
+          <button class="duration-pill" data-duration="full-day">Full Day</button>
+          <button class="duration-pill" data-duration="2-days">2 Days</button>
+          <button class="duration-pill" data-duration="multi-session">Multi-Session Series</button>
+        </div>
+
+        <div class="duration-content-box fade-up">
+          <!-- Detail 1 -->
+          <div class="duration-detail-item active" id="detail-1-hour">
+            <h3 class="duration-detail-title">Best for: Keynotes, Ice-breakers & Large-scale Assemblies</h3>
+            <p class="duration-detail-text">
+              Ideal for annual events, college orientation programs, and high-impact motivational sessions. A compact, fast-paced injection of insight designed to challenge paradigms and trigger initial curiosity. Includes core psychological frameworks and Sajan Shah's high-octane stage presentations.
+            </p>
+          </div>
+
+          <!-- Detail 2 -->
+          <div class="duration-detail-item" id="detail-half-day">
+            <h3 class="duration-detail-title">Best for: Focused Skill Seminars & Executive Briefings</h3>
+            <p class="duration-detail-text">
+              Provides 3 to 4 hours of interactive workshop time. Suitable for targeting a singular organizational pain point, such as team motivation, confidence-building, or basic productivity principles. Features practical exercises and initial neuroscience-based habit-building strategies.
+            </p>
+          </div>
+
+          <!-- Detail 3 -->
+          <div class="duration-detail-item" id="detail-full-day">
+            <h3 class="duration-detail-title">Best for: Deep-Dive Workshops & Mid-level Corporate Training</h3>
+            <p class="duration-detail-text">
+              A comprehensive 6 to 8-hour transformation container. Allows for in-depth diagnostic exercises, personal analysis, interactive cohort simulations, and customized action blueprints. Ideal for corporate soft-skills building, mental wellness intensives, or parent-teacher alignments.
+            </p>
+          </div>
+
+          <!-- Detail 4 -->
+          <div class="duration-detail-item" id="detail-2-days">
+            <h3 class="duration-detail-title">Best for: Immersive Retreats & Leadership Bootcamps</h3>
+            <p class="duration-detail-text">
+              Spans over 48 hours of learning. Deeply engages participants in simulation labs, communication workshops, and structural analysis. Best suited for management development programs, executive retreats, and senior leadership alignment campaigns.
+            </p>
+          </div>
+
+          <!-- Detail 5 -->
+          <div class="duration-detail-item" id="detail-multi-session">
+            <h3 class="duration-detail-title">Best for: Long-term Behavioural Architecture & Institutional Shift</h3>
+            <p class="duration-detail-text">
+              Delivered in recurring modular formats over weeks or months. Features systematic checkpoint audits, individual feedback analysis, digital micro-learnings, and custom reinforcement guides. This system creates verified, long-term neural reprogramming and measurable results.
+            </p>
+          </div>
+        </div>
+
+        <div class="audience-callout fade-up" style="margin-top: 3rem; font-size: 1.15rem; color: var(--muted-text);">
+          "Duration is completely flexible. Our team will recommend the ideal length based on your goals and audience size."
+        </div>
+      </div>
+    </section>
+
+    <!-- 16. REGISTRATION / REQUEST FORM SECTION -->
+    <section class="bg-black-section" id="registration">
+      <div class="container">
+        <div class="form-section-container">
+          <div class="text-center">
+            <span class="eyebrow fade-up">GET STARTED</span>
+            <h2 class="section-title fade-up delay-100">Tell Us What You Need</h2>
+            <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto;">
+              Fill The Form Below — Our Team Will Design The Perfect Program For You
+            </p>
+          </div>
+
+          <!-- Form Element -->
+          <div class="form-card fade-up">
+            <form id="requirementForm" novalidate>
+              <div class="form-grid">
+                
+                <!-- Field 1: Full Name -->
+                <div class="form-group">
+                  <label for="fullName" class="form-label">Full Name *</label>
+                  <input type="text" id="fullName" name="fullName" class="form-input" placeholder="Your full name" required>
+                  <span class="validation-error">Please enter your full name.</span>
+                </div>
+
+                <!-- Field 2: Organisation -->
+                <div class="form-group">
+                  <label for="organisationName" class="form-label">Organisation / Company Name *</label>
+                  <input type="text" id="organisationName" name="organisationName" class="form-input" placeholder="Name of your school, college, company..." required>
+                  <span class="validation-error">Please enter your organisation name.</span>
+                </div>
+
+                <!-- Field 3: Mobile -->
+                <div class="form-group">
+                  <label for="mobile" class="form-label">Mobile Number *</label>
+                  <div class="phone-input-wrapper">
+                    <span class="phone-prefix">+91</span>
+                    <input type="tel" id="mobile" name="mobile" class="form-input" placeholder="10-digit mobile number" required pattern="[0-9]{10}">
+                  </div>
+                  <span class="validation-error">Please enter a valid 10-digit mobile number.</span>
+                </div>
+
+                <!-- Field 4: Email -->
+                <div class="form-group">
+                  <label for="email" class="form-label">Email Address *</label>
+                  <input type="email" id="email" name="email" class="form-input" placeholder="your@email.com" required>
+                  <span class="validation-error">Please enter a valid email address.</span>
+                </div>
+
+                <!-- Field 5: City -->
+                <div class="form-group">
+                  <label for="city" class="form-label">City *</label>
+                  <input type="text" id="city" name="city" class="form-input" placeholder="Your city" required>
+                  <span class="validation-error">Please enter your city.</span>
+                </div>
+
+                <!-- Field 6: Type of Audience -->
+                <div class="form-group">
+                  <label for="audienceType" class="form-label">Type of Audience *</label>
+                  <select id="audienceType" name="audienceType" class="form-select" required>
+                    <option value="" disabled selected>Select audience type</option>
+                    <option value="Students">Students</option>
+                    <option value="Teachers">Teachers</option>
+                    <option value="Corporates">Corporates</option>
+                    <option value="Parents">Parents</option>
+                    <option value="Mixed Audience">Mixed Audience</option>
+                    <option value="Leadership Team">Leadership Team</option>
+                    <option value="Employees & Staff">Employees & Staff</option>
+                    <option value="Other">Other</option>
+                  </select>
+                  <span class="validation-error">Please select an audience type.</span>
+                </div>
+
+                <!-- Field 7: Participants Number -->
+                <div class="form-group">
+                  <label for="participantCount" class="form-label">Number of Participants * (Min. 10)</label>
+                  <div class="number-input-wrapper">
+                    <button type="button" class="number-btn" id="decrementBtn" aria-label="Decrease count">-</button>
+                    <input type="number" id="participantCount" name="participantCount" class="form-input" value="50" min="10" required>
+                    <button type="button" class="number-btn" id="incrementBtn" aria-label="Increase count">+</button>
+                  </div>
+                  <span class="validation-error">Minimum 10 participants required.</span>
+                </div>
+
+                <!-- Field 12: Preferred Date -->
+                <div class="form-group">
+                  <label for="preferredDate" class="form-label">Preferred Date *</label>
+                  <input type="date" id="preferredDate" name="preferredDate" class="form-input" required>
+                  <span class="validation-error">Please select a valid date in the future.</span>
+                </div>
+
+                <!-- Field 8: Type of Program Required -->
+                <div class="form-group form-group-full">
+                  <label class="form-label">Type of Program Required * (Select all that apply)</label>
+                  <div class="pills-container" id="pillsContainer">
+                    <input type="checkbox" id="prog-motivation" name="programTypes" value="Motivation" class="pill-checkbox">
+                    <label for="prog-motivation" class="pill-label">Motivation</label>
+
+                    <input type="checkbox" id="prog-corp" name="programTypes" value="Corporate Training" class="pill-checkbox">
+                    <label for="prog-corp" class="pill-label">Corporate Training</label>
+
+                    <input type="checkbox" id="prog-leadership" name="programTypes" value="Leadership" class="pill-checkbox">
+                    <label for="prog-leadership" class="pill-label">Leadership</label>
+
+                    <input type="checkbox" id="prog-student" name="programTypes" value="Student Transformation" class="pill-checkbox">
+                    <label for="prog-student" class="pill-label">Student Transformation</label>
+
+                    <input type="checkbox" id="prog-parenting" name="programTypes" value="Parenting" class="pill-checkbox">
+                    <label for="prog-parenting" class="pill-label">Parenting</label>
+
+                    <input type="checkbox" id="prog-teacher" name="programTypes" value="Teacher Training" class="pill-checkbox">
+                    <label for="prog-teacher" class="pill-label">Teacher Training</label>
+
+                    <input type="checkbox" id="prog-wellness" name="programTypes" value="Mental Wellness" class="pill-checkbox">
+                    <label for="prog-wellness" class="pill-label">Mental Wellness</label>
+
+                    <input type="checkbox" id="prog-comm" name="programTypes" value="Communication" class="pill-checkbox">
+                    <label for="prog-comm" class="pill-label">Communication</label>
+
+                    <input type="checkbox" id="prog-prod" name="programTypes" value="Productivity" class="pill-checkbox">
+                    <label for="prog-prod" class="pill-label">Productivity</label>
+
+                    <input type="checkbox" id="prog-memory" name="programTypes" value="Memory Training" class="pill-checkbox">
+                    <label for="prog-memory" class="pill-label">Memory Training</label>
+
+                    <input type="checkbox" id="prog-personal" name="programTypes" value="Personality Development" class="pill-checkbox">
+                    <label for="prog-personal" class="pill-label">Personality Development</label>
+
+                    <input type="checkbox" id="prog-annual" name="programTypes" value="Annual Event" class="pill-checkbox">
+                    <label for="prog-annual" class="pill-label">Annual Event</label>
+
+                    <input type="checkbox" id="prog-engage" name="programTypes" value="Employee Engagement" class="pill-checkbox">
+                    <label for="prog-engage" class="pill-label">Employee Engagement</label>
+                  </div>
+                  <span class="validation-error" id="programTypesError" style="margin-top: 0.75rem;">Please select at least one program type.</span>
+                </div>
+
+                <!-- Field 9: Key Challenges -->
+                <div class="form-group form-group-full">
+                  <label for="challenges" class="form-label">Key Challenges You Are Facing *</label>
+                  <textarea id="challenges" name="challenges" class="form-textarea" placeholder="Describe the main challenges your audience is currently facing..." required></textarea>
+                  <span class="validation-error">Please describe the key challenges.</span>
+                </div>
+
+                <!-- Field 10: Expected Outcomes -->
+                <div class="form-group form-group-full">
+                  <label for="expectedOutcomes" class="form-label">Expected Outcomes *</label>
+                  <textarea id="expectedOutcomes" name="expectedOutcomes" class="form-textarea" placeholder="What transformation do you want your audience to experience?" required></textarea>
+                  <span class="validation-error">Please describe your expected outcomes.</span>
+                </div>
+
+                <!-- Field 11: Preferred Mode -->
+                <div class="form-group form-group-full">
+                  <label class="form-label">Preferred Mode *</label>
+                  <div class="radio-cards-grid">
+                    <input type="radio" id="mode-online" name="preferredMode" value="Online" class="radio-card-input" checked required>
+                    <label for="mode-online" class="radio-card-label">
+                      <span class="radio-card-icon">🖥️</span>
+                      <span class="radio-card-text">Online</span>
+                    </label>
+
+                    <input type="radio" id="mode-offline" name="preferredMode" value="Offline" class="radio-card-input" required>
+                    <label for="mode-offline" class="radio-card-label">
+                      <span class="radio-card-icon">🏛️</span>
+                      <span class="radio-card-text">Offline</span>
+                    </label>
+
+                    <input type="radio" id="mode-hybrid" name="preferredMode" value="Hybrid" class="radio-card-input" required>
+                    <label for="mode-hybrid" class="radio-card-label">
+                      <span class="radio-card-icon">🔀</span>
+                      <span class="radio-card-text">Hybrid</span>
+                    </label>
+                  </div>
+                  <span class="validation-error">Please select a preferred mode.</span>
+                </div>
+
+                <!-- Field 13: Additional Requirements -->
+                <div class="form-group form-group-full">
+                  <label for="additionalRequirements" class="form-label">Additional Requirements (Optional)</label>
+                  <textarea id="additionalRequirements" name="additionalRequirements" class="form-textarea" placeholder="Any other specific requirements, languages, or customisation details..."></textarea>
+                </div>
+
+                <!-- Error Banner -->
+                <div class="form-group form-group-full" id="serverErrorBox" style="display: none; background-color: rgba(239, 68, 68, 0.1); border: 1px solid var(--error-red); padding: 1rem; border-radius: 4px; color: var(--error-red); margin-top: 1rem; text-align: center;">
+                  <span id="serverErrorMessage"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group form-group-full" style="margin-top: 1.5rem;">
+                  <button type="submit" class="btn btn-primary btn-large" style="width: 100%;" id="submitBtn">
+                    <span id="btnText">Request Customised Program →</span>
+                    <div class="spinner" id="btnSpinner" style="width: 20px; height: 20px; border-width: 2px; margin-bottom: 0; display: none;"></div>
+                  </button>
+                </div>
+
+              </div>
+            </form>
+
+            <!-- Success Screen Container -->
+            <div class="success-screen-wrapper" id="successScreen">
+              <div class="success-icon-container">✓</div>
+              <h3 class="success-title">Your Request Has Been Submitted!</h3>
+              <p class="success-message">
+                A confirmation has been sent to <strong id="successEmail">email</strong>.<br>
+                Our team will contact you at <strong id="successMobile">mobile</strong> within <strong>24–48 hours</strong> to begin designing your customised program.
+              </p>
+              
+              <div class="reference-box">
+                <div class="reference-label">Reference ID</div>
+                <div class="reference-id" id="referenceIdVal">REQ-20260522-ABCD</div>
+              </div>
+
+              <div>
+                <button type="button" class="btn btn-secondary" id="successResetBtn">
+                  ← Back to Home
+                </button>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 17. FAQ SECTION -->
+    <section class="bg-gray-section" id="faq">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">COMMON QUESTIONS</span>
+          <h2 class="section-title fade-up delay-100">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="faq-accordion fade-up">
+          
+          <!-- Item 1 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">What makes your programs different from standard motivational sessions?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Our programs are not generic. They are built around your audience, your challenges, and your transformation goals using psychology and neuroscience.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Who can request a customised program?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Schools, colleges, coaching institutes, corporates, organisations, parents' groups, leadership teams, and any community with a shared goal.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Can programs be delivered online?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Yes. We offer online, offline, and hybrid formats depending on your needs and location.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">How long does it take to design a customised program?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                After your initial consultation, most programs are designed within 3–7 working days depending on complexity.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">What is the minimum number of participants?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                We generally recommend a minimum of 20–25 participants for optimal engagement. Contact us for smaller groups.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 6 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Are programs available in regional languages?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Yes. Programs can be delivered in Hindi, Gujarati, English, and select regional languages based on your requirement.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 7 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Do participants receive certificates?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Certificates can be included depending on the program type and institutional requirement.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 8 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Can we book annual or recurring programs?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Absolutely. We work with institutions on annual event calendars, term-wise programs, and long-term engagement series.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 9 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">What is the pricing structure?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Pricing is customised based on audience size, program type, duration, and format. Contact us for a tailored quote.
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 10 -->
+          <div class="faq-item">
+            <div class="faq-header">
+              <span class="faq-question">Is this available outside India?</span>
+              <span class="faq-icon">+</span>
+            </div>
+            <div class="faq-panel">
+              <div class="faq-answer">
+                Yes. We have delivered programs for Indian diaspora communities internationally and can design programs for global audiences.
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 18. RESEARCH-BACKED METHODOLOGY -->
+    <section class="bg-black-section" id="methodology">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">THE SCIENCE BEHIND IT</span>
+          <h2 class="section-title fade-up delay-100">Research-Backed. Practically Applied.</h2>
+        </div>
+
+        <div class="science-marquee fade-up">
+          <span class="science-badge">Neuroscience</span>
+          <span class="science-badge">Cognitive Psychology</span>
+          <span class="science-badge">Behavioural Science</span>
+          <span class="science-badge">Emotional Intelligence</span>
+          <span class="science-badge">Motivation Research</span>
+          <span class="science-badge">Communication Psychology</span>
+          <span class="science-badge">Learning Science</span>
+        </div>
+
+        <div class="science-center-statement fade-up">
+          "This is not temporary inspiration. This is scientific behavioural transformation."
+        </div>
+
+        <div class="science-data-row fade-up">
+          <div class="science-data-item">
+            <span class="science-data-num">16+</span> years of field application
+          </div>
+          <div class="science-data-item">
+            <span class="science-data-num">15M+</span> lives impacted
+          </div>
+          <div class="science-data-item">
+            <span class="science-data-num">100%</span> customised for you
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 19. PARTNER INSTITUTIONS SECTION -->
+    <section class="bg-gray-section" id="partners">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">OUR REACH</span>
+          <h2 class="section-title fade-up delay-100">Institutions & Organisations We've Served</h2>
+        </div>
+
+        <div class="reach-badges fade-up">
+          <span class="reach-badge">Schools</span>
+          <span class="reach-badge">Colleges</span>
+          <span class="reach-badge">Coaching Institutes</span>
+          <span class="reach-badge">Corporates</span>
+          <span class="reach-badge">Organisations</span>
+          <span class="reach-badge">Leadership Teams</span>
+        </div>
+
+        <div class="geo-grid">
+          <div class="geo-card fade-up">
+            <span class="geo-emoji">🇮🇳</span>
+            <div class="geo-title">Pan-India</div>
+            <div class="geo-desc">Nationwide presence and localized training capacity across all Indian states.</div>
+          </div>
+          <div class="geo-card fade-up delay-100">
+            <span class="geo-emoji">🌐</span>
+            <div class="geo-title">International</div>
+            <div class="geo-desc">Custom global webinars and training packages for institutions abroad.</div>
+          </div>
+          <div class="geo-card fade-up delay-200">
+            <span class="geo-emoji">🎤</span>
+            <div class="geo-title">Conferences & Events</div>
+            <div class="geo-desc">Large format keynotes, symposia, and institutional anniversary programs.</div>
+          </div>
+        </div>
+
+        <!-- Marquee -->
+        <div class="marquee-container">
+          <div class="marquee-content" style="animation-duration: 25s;">
+            <span class="marquee-item">Schools</span>
+            <span class="marquee-item">Colleges</span>
+            <span class="marquee-item">Corporates</span>
+            <span class="marquee-item">NGOs</span>
+            <span class="marquee-item">Hospitals</span>
+            <span class="marquee-item">EdTech Companies</span>
+            <span class="marquee-item">Government Bodies</span>
+            <span class="marquee-item">Universities</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 20. FINAL CTA SECTION -->
+    <section class="cta-mesh-section" id="final-cta">
+      <div class="container text-center">
+        <h2 class="final-cta-bebas fade-up">
+          Your Audience Does Not Need Another Seminar.
+        </h2>
+        
+        <div class="final-cta-sub fade-up delay-100">
+          <p>They need transformation.</p>
+          <p>Transformation that is designed specifically for them.</p>
+          <p>Transformation that lasts long after the session ends.</p>
+        </div>
+
+        <h3 class="final-cta-massive fade-up delay-200">
+          LET'S BUILD IT TOGETHER.
+        </h3>
+
+        <div class="fade-up delay-300">
+          <a href="#registration" class="btn btn-primary btn-large" style="padding: 1.25rem 3.5rem; font-size: 1.35rem;">
+            Design My Customised Program →
+          </a>
+          <p class="cta-trust-text">
+            Free consultation · No commitment · Response within 24 hours
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 21. CONTACT INFORMATION SECTION -->
+    <section class="bg-gray-section" id="contact">
+      <div class="container">
+        <div class="text-center" style="margin-bottom: 4rem;">
+          <span class="eyebrow fade-up">GET IN TOUCH</span>
+          <h2 class="section-title fade-up delay-100">Contact Sajan Shah</h2>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Card 1 -->
+          <div class="contact-card fade-up">
+            <span class="contact-icon">📍</span>
+            <h3 class="contact-title">Office Address</h3>
+            <p class="contact-detail">
+              Sajan Shah Training & Consultancy<br>
+              Vadodara, Gujarat, India
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="contact-card fade-up delay-100">
+            <span class="contact-icon">📞</span>
+            <h3 class="contact-title">Contact Number</h3>
+            <p class="contact-detail">
+              <a href="tel:+918511363376">+91 85113 63376</a><br>
+              Available Mon–Sat, 10am–7pm IST
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="contact-card fade-up delay-200">
+            <span class="contact-icon">📧</span>
+            <h3 class="contact-title">Email</h3>
+            <p class="contact-detail">
+              <a href="mailto:info@sajanshah.com">info@sajanshah.com</a><br>
+              Response within 24 business hours
+            </p>
+          </div>
+        </div>
+
+        <div class="social-row fade-up">
+          <a href="https://instagram.com" class="social-link" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://youtube.com" class="social-link" target="_blank" rel="noopener noreferrer">YouTube</a>
+          <a href="https://facebook.com" class="social-link" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://linkedin.com" class="social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- 22. FLOATING ELEMENTS (Global) -->
+  <!-- WhatsApp Floating Button -->
+  <a href="https://wa.me/918511363376" class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat on WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.514 2.266 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.62.963 3.238 1.472 4.881 1.473 5.485.002 9.948-4.461 9.95-9.95.002-2.66-1.033-5.159-2.908-7.037C16.702 1.76 14.2 1.726 11.536 1.726c-5.491 0-9.956 4.462-9.958 9.95-.001 1.748.48 3.45 1.393 4.969L1.936 21.09l4.711-1.936zm12.39-5.467c-.33-.165-1.951-.963-2.253-1.074-.3-.11-.52-.165-.74.165-.22.33-.85 1.074-1.04 1.295-.19.22-.38.24-.71.075-.33-.165-1.393-.513-2.653-1.637-.98-.874-1.642-1.953-1.834-2.282-.19-.33-.02-.508.145-.671.15-.147.33-.385.495-.578.165-.192.22-.33.33-.55.11-.22.055-.412-.028-.577-.083-.165-.74-1.785-1.013-2.446-.267-.642-.539-.556-.74-.566-.19-.01-.41-.01-.63-.01-.22 0-.58.083-.88.413-.3.33-1.156 1.128-1.156 2.75 0 1.623 1.182 3.19 1.346 3.41 1.65 2.217 3.75 3.393 5.86 3.393.52 0 1.02-.02 1.48-.12.44-.09 1.951-.963 2.253-1.074.301-.11.52-.165.74.165.22.33.85 1.074 1.04 1.295.19.22.38.24.71.075z"/>
+    </svg>
+  </a>
+
+  <!-- Back to Top Button -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Scroll to top">↑</button>
+
+  <!-- 23. FOOTER -->
+  <footer>
+    <div class="container footer-grid">
+      
+      <!-- Col 1 -->
+      <div class="footer-logo-col">
+        <a href="#hero" class="logo-container" style="margin-bottom: 1rem;">
+          <span class="logo-title">SAJAN SHAH</span>
+          <span class="logo-subtitle">Customised Programs</span>
+        </a>
+        <p class="footer-tagline">
+          Designing high-impact, science-backed transformation modules for schools, colleges, and corporates across India.
+        </p>
+      </div>
+
+      <!-- Col 2 -->
+      <div>
+        <h4 class="footer-col-title">Quick Links</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="#about">About</a></li>
+          <li class="footer-link-item"><a href="#programs">Programs</a></li>
+          <li class="footer-link-item"><a href="#how-it-works">How It Works</a></li>
+          <li class="footer-link-item"><a href="#faq">FAQ</a></li>
+          <li class="footer-link-item"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3 -->
+      <div>
+        <h4 class="footer-col-title">Programs</h4>
+        <ul class="footer-links">
+          <li class="footer-link-item"><a href="#programs">Motivation Programs</a></li>
+          <li class="footer-link-item"><a href="#programs">Corporate Training</a></li>
+          <li class="footer-link-item"><a href="#programs">Leadership Workshops</a></li>
+          <li class="footer-link-item"><a href="#programs">Student Transformation</a></li>
+          <li class="footer-link-item"><a href="#programs">Teacher Training</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4 -->
+      <div>
+        <h4 class="footer-col-title">Contact</h4>
+        <p class="footer-tagline" style="margin-bottom: 0.75rem;">
+          Vadodara, Gujarat, India
+        </p>
+        <p class="footer-tagline" style="margin-bottom: 0.75rem;">
+          📞 +91 85113 63376
+        </p>
+        <p class="footer-tagline">
+          📧 info@sajanshah.com
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Bottom Bar -->
+    <div class="footer-bottom-bar">
+      <div class="container footer-bottom-flex">
+        <div class="footer-copyright">
+          © 2026 Sajan Shah. All Rights Reserved.
+        </div>
+        <ul class="footer-legal-links">
+          <li class="footer-legal-link"><a href="#">Privacy Policy</a></li>
+          <li class="footer-legal-link"><a href="#">Terms & Conditions</a></li>
+          <li class="footer-legal-link"><a href="#">Refund Policy</a></li>
+          <li class="footer-legal-link"><a href="#contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+      // Remove full page loader
+      const loader = document.getElementById('loader');
+      setTimeout(() => {
+        loader.style.opacity = '0';
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 500);
+      }, 500);
+
+      // Custom Cursor Follower (Desktop only)
+      const cursorDot = document.getElementById('cursorDot');
+      if (window.matchMedia("(pointer: fine)").matches) {
+        document.addEventListener('mousemove', (e) => {
+          cursorDot.style.left = `${e.clientX}px`;
+          cursorDot.style.top = `${e.clientY}px`;
+        });
+        
+        // Hover enlargement on buttons & interactive links
+        const clickables = document.querySelectorAll('a, button, input, select, textarea, .faq-header, .pill-label, .radio-card-label, .duration-pill');
+        clickables.forEach(item => {
+          item.addEventListener('mouseenter', () => {
+            cursorDot.style.width = '12px';
+            cursorDot.style.height = '12px';
+            cursorDot.style.backgroundColor = 'var(--orange)';
+          });
+          item.addEventListener('mouseleave', () => {
+            cursorDot.style.width = '6px';
+            cursorDot.style.height = '6px';
+            cursorDot.style.backgroundColor = 'var(--orange)';
+          });
+        });
+      } else {
+        cursorDot.style.display = 'none';
+      }
+
+      // Scroll Progress Bar
+      const scrollBar = document.getElementById('scrollBar');
+      window.addEventListener('scroll', () => {
+        const winScroll = document.documentElement.scrollTop || document.body.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        scrollBar.style.width = `${scrolled}%`;
+      });
+
+      // Sticky Nav Background Transition on Scroll
+      const header = document.getElementById('mainHeader');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+          header.classList.add('scrolled');
+        } else {
+          header.classList.remove('scrolled');
+        }
+      });
+
+      // Back to Top Button
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY > 600) {
+          backToTopBtn.classList.add('visible');
+        } else {
+          backToTopBtn.classList.remove('visible');
+        }
+      });
+      backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Mobile Hamburger Toggle
+      const hamburgerBtn = document.getElementById('hamburgerBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+      hamburgerBtn.addEventListener('click', () => {
+        const isOpen = mobileMenu.classList.contains('open');
+        hamburgerBtn.setAttribute('aria-expanded', !isOpen);
+        mobileMenu.classList.toggle('open');
+        document.body.style.overflow = isOpen ? 'auto' : 'hidden';
+      });
+
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', () => {
+          hamburgerBtn.setAttribute('aria-expanded', 'false');
+          mobileMenu.classList.remove('open');
+          document.body.style.overflow = 'auto';
+        });
+      });
+
+      // Hero Interactive Particle Network Canvas Animation (60 nodes)
+      const canvas = document.getElementById('particle-canvas');
+      const ctx = canvas.getContext('2d');
+      let particles = [];
+      const particleCount = 60;
+      const connectionDist = 120;
+
+      function resizeCanvas() {
+        canvas.width = canvas.parentElement.clientWidth;
+        canvas.height = canvas.parentElement.clientHeight;
+      }
+      resizeCanvas();
+      window.addEventListener('resize', resizeCanvas);
+
+      class Particle {
+        constructor() {
+          this.x = Math.random() * canvas.width;
+          this.y = Math.random() * canvas.height;
+          this.vx = (Math.random() - 0.5) * 0.5;
+          this.vy = (Math.random() - 0.5) * 0.5;
+          this.radius = Math.random() * 2 + 1;
+        }
+
+        update() {
+          this.x += this.vx;
+          this.y += this.vy;
+
+          if (this.x < 0 || this.x > canvas.width) this.vx = -this.vx;
+          if (this.y < 0 || this.y > canvas.height) this.vy = -this.vy;
+        }
+
+        draw() {
+          ctx.beginPath();
+          ctx.arc(this.x, this.y, this.radius, 0, Math.PI * 2);
+          ctx.fillStyle = 'rgba(242, 101, 34, 0.4)';
+          ctx.fill();
+        }
+      }
+
+      function initParticles() {
+        particles = [];
+        for (let i = 0; i < particleCount; i++) {
+          particles.push(new Particle());
+        }
+      }
+      initParticles();
+
+      function animateParticles() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Draw links
+        for (let i = 0; i < particles.length; i++) {
+          for (let j = i + 1; j < particles.length; j++) {
+            const dx = particles[i].x - particles[j].x;
+            const dy = particles[i].y - particles[j].y;
+            const dist = Math.sqrt(dx * dx + dy * dy);
+
+            if (dist < connectionDist) {
+              const alpha = (1 - dist / connectionDist) * 0.15;
+              ctx.beginPath();
+              ctx.moveTo(particles[i].x, particles[i].y);
+              ctx.lineTo(particles[j].x, particles[j].y);
+              ctx.strokeStyle = `rgba(242, 101, 34, ${alpha})`;
+              ctx.lineWidth = 1;
+              ctx.stroke();
+            }
+          }
+        }
+
+        particles.forEach(p => {
+          p.update();
+          p.draw();
+        });
+
+        requestAnimationFrame(animateParticles);
+      }
+      animateParticles();
+
+      // Hero Typewriter Cycling Text
+      const typewriter = document.getElementById('typewriter');
+      const phrases = [
+        "A Program Designed For Your Exact Challenge.",
+        "Built Around Your Audience. Your Goals. Your Reality.",
+        "Psychology. Neuroscience. Real-World Impact."
+      ];
+      let phraseIndex = 0;
+      let charIndex = 0;
+      let isDeleting = false;
+      let typeSpeed = 80;
+
+      function handleTypewriter() {
+        const currentPhrase = phrases[phraseIndex];
+        
+        if (isDeleting) {
+          typewriter.textContent = currentPhrase.substring(0, charIndex - 1);
+          charIndex--;
+          typeSpeed = 40;
+        } else {
+          typewriter.textContent = currentPhrase.substring(0, charIndex + 1);
+          charIndex++;
+          typeSpeed = 80;
+        }
+
+        if (!isDeleting && charIndex === currentPhrase.length) {
+          isDeleting = true;
+          typeSpeed = 2000; // Pause at end of phrase
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          phraseIndex = (phraseIndex + 1) % phrases.length;
+          typeSpeed = 500; // Pause before typing next
+        }
+
+        setTimeout(handleTypewriter, typeSpeed);
+      }
+      setTimeout(handleTypewriter, 1000);
+
+      // Section Intersection Observer for Navigation Links & Entrance Animations
+      const sections = document.querySelectorAll('section');
+      const navLinks = document.querySelectorAll('.nav-link');
+      
+      const sectionObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            // Find corresponding link
+            const id = entry.target.getAttribute('id');
+            navLinks.forEach(link => {
+              const href = link.getAttribute('href').replace('#', '');
+              if (href === id) {
+                link.classList.add('active');
+              } else {
+                link.classList.remove('active');
+              }
+            });
+          }
+        });
+      }, { threshold: 0.25 });
+
+      sections.forEach(s => sectionObserver.observe(s));
+
+      // Reveal Animations on Scroll
+      const animateOnScroll = document.querySelectorAll('.fade-up, .fade-left, .fade-right, .strikethrough-item');
+      
+      const scrollObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('active');
+            
+            // Special trigger for strikethrough list items
+            if (entry.target.classList.contains('strikethrough-item')) {
+              entry.target.classList.add('struck');
+            }
+            
+            // Special trigger for counters
+            const counters = entry.target.querySelectorAll('.counter-number');
+            if (counters.length > 0) {
+              counters.forEach(c => {
+                const target = parseInt(c.getAttribute('data-target'), 10);
+                if (target) {
+                  runCounter(c, target);
+                }
+              });
+            }
+
+            scrollObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
+
+      animateOnScroll.forEach(item => scrollObserver.observe(item));
+
+      // Trigger counter animation
+      function runCounter(elem, target) {
+        let start = 0;
+        const duration = 2000; // 2 seconds
+        const startTime = performance.now();
+
+        function easeOutQuad(x) {
+          return x === 1 ? 1 : 1 - Math.pow(1 - x, 2);
+        }
+
+        function updateCounter(currentTime) {
+          const elapsedTime = currentTime - startTime;
+          const progress = Math.min(elapsedTime / duration, 1);
+          const easeProgress = easeOutQuad(progress);
+          const currentValue = Math.floor(easeProgress * target);
+          
+          if (target >= 1000000) {
+            elem.textContent = `${(currentValue / 1000000).toFixed(0)}M+`;
+          } else if (target === 100) {
+            elem.textContent = `${currentValue}%`;
+          } else {
+            elem.textContent = `${currentValue}+`;
+          }
+
+          if (progress < 1) {
+            requestAnimationFrame(updateCounter);
+          } else {
+            if (target >= 1000000) {
+              elem.textContent = `${(target / 1000000).toFixed(0)}M+`;
+            } else if (target === 100) {
+              elem.textContent = `${target}%`;
+            } else {
+              elem.textContent = `${target}+`;
+            }
+          }
+        }
+        requestAnimationFrame(updateCounter);
+      }
+
+      // Timeline Connecting Line Animate Draw
+      const timelineLine = document.getElementById('timeline-draw-path');
+      const timelineSection = document.getElementById('how-it-works');
+      
+      if (timelineLine) {
+        window.addEventListener('scroll', () => {
+          const rect = timelineSection.getBoundingClientRect();
+          const viewHeight = window.innerHeight;
+          
+          // Calculate percentage scrolled within the timeline section
+          const startTrigger = rect.top - viewHeight / 2;
+          const endTrigger = rect.bottom - viewHeight / 2;
+          const totalDist = rect.height;
+          const currentDist = viewHeight / 2 - rect.top;
+          
+          let progress = currentDist / totalDist;
+          progress = Math.max(0, Math.min(1, progress));
+          
+          const dashoffset = 1000 - (progress * 1000);
+          timelineLine.setAttribute('stroke-dashoffset', dashoffset);
+
+          // Highlight steps based on scroll location
+          const steps = document.querySelectorAll('.timeline-step');
+          steps.forEach((step, idx) => {
+            const stepRect = step.getBoundingClientRect();
+            if (stepRect.top < viewHeight / 2 + 100) {
+              step.classList.add('active');
+            } else {
+              step.classList.remove('active');
+            }
+          });
+        });
+      }
+
+      // Horizontal Marquee duplicates for infinite loop
+      const marquee = document.getElementById('marqueeContent');
+      if (marquee) {
+        const cloned = marquee.cloneNode(true);
+        marquee.parentNode.appendChild(cloned);
+      }
+
+      // Programs Category Filter
+      const filterBtns = document.querySelectorAll('.filter-btn');
+      const programCards = document.querySelectorAll('.program-card-wrapper');
+      
+      filterBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          // Toggle Active class
+          filterBtns.forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+
+          const filter = btn.getAttribute('data-filter');
+
+          programCards.forEach(card => {
+            const tagsStr = card.getAttribute('data-tags');
+            const tags = tagsStr.split(',').map(t => t.trim());
+
+            if (filter === 'All' || tags.includes(filter)) {
+              card.classList.remove('hide');
+            } else {
+              card.classList.add('hide');
+            }
+          });
+        });
+      });
+
+      // Testimonial Carousel Mechanics
+      const track = document.getElementById('testimonialTrack');
+      const cards = document.querySelectorAll('.testimonial-card');
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      const dotsContainer = document.getElementById('carouselDots');
+      const progressBar = document.getElementById('carouselProgressBar');
+      
+      let curIndex = 0;
+      let autoPlayTimer;
+      let cardWidth = 0;
+      let totalVisible = 5;
+
+      function getVisibleCardsCount() {
+        const width = window.innerWidth;
+        if (width < 480) return 1;
+        if (width < 768) return 2;
+        if (width < 1200) return 3;
+        return 5;
+      }
+
+      function initCarousel() {
+        dotsContainer.innerHTML = '';
+        totalVisible = getVisibleCardsCount();
+        const totalSlides = Math.max(1, cards.length - totalVisible + 1);
+
+        for (let i = 0; i < totalSlides; i++) {
+          const dot = document.createElement('div');
+          dot.classList.add('carousel-dot');
+          if (i === 0) dot.classList.add('active');
+          dot.addEventListener('click', () => {
+            goToSlide(i);
+          });
+          dotsContainer.appendChild(dot);
+        }
+
+        goToSlide(0);
+        resetAutoPlay();
+      }
+
+      function goToSlide(index) {
+        totalVisible = getVisibleCardsCount();
+        const maxIndex = Math.max(0, cards.length - totalVisible);
+        curIndex = Math.max(0, Math.min(index, maxIndex));
+
+        // Calculate card width dynamically + GAP (24px which is 1.5rem)
+        const gap = 24;
+        const trackWidth = track.clientWidth;
+        cardWidth = (trackWidth - (gap * (totalVisible - 1))) / totalVisible;
+
+        cards.forEach(c => {
+          c.style.flex = `0 0 ${cardWidth}px`;
+        });
+
+        const offset = -curIndex * (cardWidth + gap);
+        track.style.transform = `translateX(${offset}px)`;
+
+        // Update active dots
+        const dots = document.querySelectorAll('.carousel-dot');
+        dots.forEach((dot, idx) => {
+          if (idx === curIndex) {
+            dot.classList.add('active');
+          } else {
+            dot.classList.remove('active');
+          }
+        });
+
+        // Update progress bar
+        const progress = maxIndex === 0 ? 100 : (curIndex / maxIndex) * 100;
+        progressBar.style.width = `${progress}%`;
+      }
+
+      function nextSlide() {
+        totalVisible = getVisibleCardsCount();
+        const maxIndex = Math.max(0, cards.length - totalVisible);
+        if (curIndex >= maxIndex) {
+          goToSlide(0);
+        } else {
+          goToSlide(curIndex + 1);
+        }
+      }
+
+      function prevSlide() {
+        if (curIndex <= 0) {
+          const maxIndex = Math.max(0, cards.length - getVisibleCardsCount());
+          goToSlide(maxIndex);
+        } else {
+          goToSlide(curIndex - 1);
+        }
+      }
+
+      function resetAutoPlay() {
+        clearInterval(autoPlayTimer);
+        autoPlayTimer = setInterval(nextSlide, 4000);
+      }
+
+      prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoPlay();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoPlay();
+      });
+
+      track.addEventListener('mouseenter', () => clearInterval(autoPlayTimer));
+      track.addEventListener('mouseleave', resetAutoPlay);
+
+      // Mobile Touch Swiping on Carousel
+      let startX = 0;
+      let isDragging = false;
+
+      track.addEventListener('touchstart', (e) => {
+        startX = e.touches[0].clientX;
+        isDragging = true;
+        clearInterval(autoPlayTimer);
+      }, { passive: true });
+
+      track.addEventListener('touchend', (e) => {
+        if (!isDragging) return;
+        isDragging = false;
+        const diffX = e.changedTouches[0].clientX - startX;
+
+        if (diffX > 50) {
+          prevSlide();
+        } else if (diffX < -50) {
+          nextSlide();
+        }
+        resetAutoPlay();
+      }, { passive: true });
+
+      window.addEventListener('resize', () => {
+        goToSlide(curIndex);
+      });
+
+      initCarousel();
+
+      // Duration Expandable Details Tab Selector
+      const durationPills = document.querySelectorAll('.duration-pill');
+      const durationDetails = document.querySelectorAll('.duration-detail-item');
+
+      durationPills.forEach(pill => {
+        pill.addEventListener('click', () => {
+          durationPills.forEach(p => p.classList.remove('active'));
+          pill.classList.add('active');
+
+          const code = pill.getAttribute('data-duration');
+          durationDetails.forEach(detail => {
+            detail.classList.remove('active');
+            if (detail.getAttribute('id') === `detail-${code}`) {
+              detail.classList.add('active');
+            }
+          });
+        });
+      });
+
+      // FAQ Accordion (Single-open)
+      const faqHeaders = document.querySelectorAll('.faq-header');
+      faqHeaders.forEach(hdr => {
+        hdr.addEventListener('click', () => {
+          const item = hdr.parentElement;
+          const isOpen = item.classList.contains('open');
+
+          // Close all FAQ items
+          document.querySelectorAll('.faq-item').forEach(el => {
+            el.classList.remove('open');
+            el.querySelector('.faq-panel').style.maxHeight = '0';
+          });
+
+          // Open selected if not already open
+          if (!isOpen) {
+            item.classList.add('open');
+            const panel = item.querySelector('.faq-panel');
+            panel.style.maxHeight = `${panel.scrollHeight}px`;
+          }
+        });
+      });
+
+      // Participants incrementer counter controls
+      const countInput = document.getElementById('participantCount');
+      const incrementBtn = document.getElementById('incrementBtn');
+      const decrementBtn = document.getElementById('decrementBtn');
+
+      incrementBtn.addEventListener('click', () => {
+        let val = parseInt(countInput.value, 10) || 10;
+        countInput.value = val + 10;
+        validateField(countInput);
+      });
+
+      decrementBtn.addEventListener('click', () => {
+        let val = parseInt(countInput.value, 10) || 10;
+        if (val > 10) {
+          countInput.value = val - 10;
+        } else {
+          countInput.value = 10;
+        }
+        validateField(countInput);
+      });
+
+      // Form validation functions (client-side checks)
+      const form = document.getElementById('requirementForm');
+      const requiredInputs = form.querySelectorAll('[required]');
+
+      requiredInputs.forEach(input => {
+        input.addEventListener('blur', () => {
+          validateField(input);
+        });
+        
+        input.addEventListener('input', () => {
+          const grp = input.closest('.form-group');
+          if (grp && grp.classList.contains('has-error')) {
+            validateField(input);
+          }
+        });
+      });
+
+      // Validator trigger
+      function validateField(input) {
+        const grp = input.closest('.form-group');
+        let isValid = true;
+
+        if (input.type === 'email') {
+          const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+          isValid = emailRegex.test(input.value.trim());
+        } else if (input.type === 'tel') {
+          const telRegex = /^\d{10}$/;
+          isValid = telRegex.test(input.value.replace(/\D/g, ''));
+        } else if (input.id === 'preferredDate') {
+          const dateVal = new Date(input.value);
+          const today = new Date();
+          today.setHours(0,0,0,0);
+          isValid = input.value !== '' && dateVal >= today;
+        } else if (input.id === 'participantCount') {
+          const count = parseInt(input.value, 10);
+          isValid = !isNaN(count) && count >= 10;
+        } else {
+          isValid = input.value.trim() !== '';
+        }
+
+        if (isValid) {
+          grp.classList.remove('has-error');
+        } else {
+          grp.classList.add('has-error');
+        }
+
+        return isValid;
+      }
+
+      function validateProgramTypes() {
+        const checkboxes = document.querySelectorAll('input[name="programTypes"]:checked');
+        const errSpan = document.getElementById('programTypesError');
+        const grp = document.getElementById('pillsContainer').closest('.form-group');
+        
+        if (checkboxes.length > 0) {
+          grp.classList.remove('has-error');
+          errSpan.style.display = 'none';
+          return true;
+        } else {
+          grp.classList.add('has-error');
+          errSpan.style.display = 'block';
+          return false;
+        }
+      }
+
+      // Realtime validation trigger for pills checkbox
+      const pillChecks = document.querySelectorAll('input[name="programTypes"]');
+      pillChecks.forEach(ch => {
+        ch.addEventListener('change', () => {
+          validateProgramTypes();
+        });
+      });
+
+      function validateForm() {
+        let isFormValid = true;
+
+        requiredInputs.forEach(input => {
+          const isFieldValid = validateField(input);
+          if (!isFieldValid) {
+            isFormValid = false;
+          }
+        });
+
+        const isPillSelectionValid = validateProgramTypes();
+        if (!isPillSelectionValid) {
+          isFormValid = false;
+        }
+
+        return isFormValid;
+      }
+
+      // Handle form submission
+      form.addEventListener('submit', async (e) => {
+        e.preventDefault();
+        
+        const serverErrorBox = document.getElementById('serverErrorBox');
+        serverErrorBox.style.display = 'none';
+
+        if (!validateForm()) {
+          const firstErr = form.querySelector('.has-error');
+          if (firstErr) {
+            firstErr.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          }
+          return;
+        }
+
+        // Set Loading State
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+
+        submitBtn.disabled = true;
+        btnText.style.display = 'none';
+        btnSpinner.style.display = 'block';
+
+        // Gather form parameters
+        const selectedPrograms = [];
+        document.querySelectorAll('input[name="programTypes"]:checked').forEach(ch => {
+          selectedPrograms.push(ch.value);
+        });
+
+        const formData = {
+          fullName: document.getElementById('fullName').value.trim(),
+          organisationName: document.getElementById('organisationName').value.trim(),
+          mobile: document.getElementById('mobile').value.trim(),
+          email: document.getElementById('email').value.trim(),
+          city: document.getElementById('city').value.trim(),
+          audienceType: document.getElementById('audienceType').value,
+          participantCount: parseInt(document.getElementById('participantCount').value, 10),
+          programTypes: selectedPrograms,
+          challenges: document.getElementById('challenges').value.trim(),
+          expectedOutcomes: document.getElementById('expectedOutcomes').value.trim(),
+          preferredMode: document.querySelector('input[name="preferredMode"]:checked').value,
+          preferredDate: document.getElementById('preferredDate').value,
+          additionalRequirements: document.getElementById('additionalRequirements').value.trim()
+        };
+
+        try {
+          const response = await fetch('/api/request', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+          });
+
+          const result = await response.json();
+
+          if (response.ok && result.success) {
+            // Render success panel
+            document.getElementById('successEmail').textContent = formData.email;
+            document.getElementById('successMobile').textContent = `+91 ${formData.mobile}`;
+            document.getElementById('referenceIdVal').textContent = result.referenceId;
+            
+            form.style.display = 'none';
+            document.getElementById('successScreen').style.display = 'block';
+            document.getElementById('successScreen').scrollIntoView({ behavior: 'smooth', block: 'center' });
+          } else {
+            // Render error banner
+            document.getElementById('serverErrorMessage').textContent = result.message || 'Validation failed on server.';
+            serverErrorBox.style.display = 'block';
+            serverErrorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            
+            submitBtn.disabled = false;
+            btnText.style.display = 'block';
+            btnSpinner.style.display = 'none';
+          }
+
+        } catch (err) {
+          // Connections failure fallback
+          document.getElementById('serverErrorMessage').textContent = 'Connection failed. Please try again or email info@sajanshah.com';
+          serverErrorBox.style.display = 'block';
+          serverErrorBox.scrollIntoView({ behavior: 'smooth', block: 'center' });
+
+          submitBtn.disabled = false;
+          btnText.style.display = 'block';
+          btnSpinner.style.display = 'none';
+        }
+      });
+
+      // Reset success display back to home
+      document.getElementById('successResetBtn').addEventListener('click', () => {
+        form.reset();
+        
+        // Remove error states if lingering
+        document.querySelectorAll('.form-group').forEach(grp => {
+          grp.classList.remove('has-error');
+        });
+
+        // Set default value back to 50
+        countInput.value = '50';
+
+        // Re-display form
+        document.getElementById('successScreen').style.display = 'none';
+        form.style.display = 'block';
+
+        // Re-enable submit button
+        const submitBtn = document.getElementById('submitBtn');
+        const btnText = document.getElementById('btnText');
+        const btnSpinner = document.getElementById('btnSpinner');
+        submitBtn.disabled = false;
+        btnText.style.display = 'block';
+        btnSpinner.style.display = 'none';
+
+        // Scroll back to Hero
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+
+      // Interactive duration selector smooth links scroll offset
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+          const targetId = this.getAttribute('href');
+          if (targetId === '#') return;
+          const targetElem = document.querySelector(targetId);
+          if (targetElem) {
+            const yOffset = -80; // height of sticky nav
+            const y = targetElem.getBoundingClientRect().top + window.pageYOffset + yOffset;
+            window.scrollTo({ top: y, behavior: 'smooth' });
+          }
+        });
+      });
+
+    });
+  </script>
+</body>
+</html>
