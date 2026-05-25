@@ -714,30 +714,38 @@
 
     .logos-grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1rem;
-      margin-bottom: 1.5rem;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1.25rem;
+      margin-bottom: 2rem;
     }
 
     .logo-slot {
-      background-color: var(--elevated-black);
+      background: linear-gradient(135deg, rgba(20, 20, 20, 0.6) 0%, rgba(5, 5, 5, 0.8) 100%);
       border: 1px solid var(--border-gray);
-      border-radius: 4px;
-      height: 80px;
+      border-radius: 8px;
+      min-height: 90px;
+      padding: 1rem;
       display: flex;
       align-items: center;
       justify-content: center;
+      text-align: center;
       color: var(--muted-text);
       font-family: var(--font-subheading);
-      font-size: 0.875rem;
-      letter-spacing: 0.05em;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.03em;
       text-transform: uppercase;
-      transition: all 0.3s;
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+      backdrop-filter: blur(10px);
     }
 
     .logo-slot:hover {
       border-color: var(--orange);
       color: var(--white);
+      transform: translateY(-5px);
+      box-shadow: 0 8px 24px rgba(242, 101, 34, 0.25);
+      background: linear-gradient(135deg, rgba(242, 101, 34, 0.1) 0%, rgba(10, 10, 10, 0.9) 100%);
     }
 
     .logo-caption {
@@ -2614,6 +2622,129 @@
         transform: none !important;
       }
     }
+
+    /* Portrait Image Styles */
+    .portrait-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: transform 0.5s ease;
+    }
+    .portrait-frame:hover .portrait-img {
+      transform: scale(1.03);
+    }
+
+    /* Gallery Section Styles */
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 1.5rem;
+      margin-top: 3rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+      border: 1px solid var(--border-gray);
+      transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    /* Grid spans for 5 items */
+    .gallery-item:nth-child(1) { grid-column: span 7; }
+    .gallery-item:nth-child(2) { grid-column: span 5; }
+    .gallery-item:nth-child(3) { grid-column: span 4; }
+    .gallery-item:nth-child(4) { grid-column: span 4; }
+    .gallery-item:nth-child(5) { grid-column: span 4; }
+
+    .gallery-img-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .gallery-overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.4) 60%, transparent 100%);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      opacity: 0.85;
+      transition: opacity 0.3s ease;
+      z-index: 3;
+    }
+
+    .gallery-category {
+      color: var(--orange);
+      font-family: var(--font-subheading);
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 0.25rem;
+    }
+
+    .gallery-title {
+      color: var(--white);
+      font-family: var(--font-body);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .gallery-item:hover {
+      transform: translateY(-5px);
+      border-color: var(--orange);
+      box-shadow: 0 15px 35px rgba(242, 101, 34, 0.2);
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.05);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    @media (max-width: 991px) {
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(2),
+      .gallery-item:nth-child(3),
+      .gallery-item:nth-child(4),
+      .gallery-item:nth-child(5) {
+        grid-column: span 6;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .gallery-item:nth-child(1),
+      .gallery-item:nth-child(2),
+      .gallery-item:nth-child(3),
+      .gallery-item:nth-child(4),
+      .gallery-item:nth-child(5) {
+        grid-column: span 12;
+      }
+      .gallery-img-wrapper {
+        aspect-ratio: 4/3;
+      }
+    }
   </style>
 </head>
 <body>
@@ -2647,6 +2778,7 @@
           <li><a href="#programs" class="nav-link">Programs</a></li>
           <li><a href="#outcomes" class="nav-link">Outcomes</a></li>
           <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+          <li><a href="#gallery" class="nav-link">Gallery</a></li>
           <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
           <li><a href="#faq" class="nav-link">FAQ</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -2673,11 +2805,12 @@
         <li><a href="#programs" class="mobile-nav-link" style="animation-delay: 0.2s;">Programs</a></li>
         <li><a href="#outcomes" class="mobile-nav-link" style="animation-delay: 0.3s;">Outcomes</a></li>
         <li><a href="#how-it-works" class="mobile-nav-link" style="animation-delay: 0.4s;">How It Works</a></li>
-        <li><a href="#testimonials" class="mobile-nav-link" style="animation-delay: 0.5s;">Testimonials</a></li>
-        <li><a href="#faq" class="mobile-nav-link" style="animation-delay: 0.6s;">FAQ</a></li>
-        <li><a href="#contact" class="mobile-nav-link" style="animation-delay: 0.7s;">Contact</a></li>
+        <li><a href="#gallery" class="mobile-nav-link" style="animation-delay: 0.5s;">Gallery</a></li>
+        <li><a href="#testimonials" class="mobile-nav-link" style="animation-delay: 0.6s;">Testimonials</a></li>
+        <li><a href="#faq" class="mobile-nav-link" style="animation-delay: 0.7s;">FAQ</a></li>
+        <li><a href="#contact" class="mobile-nav-link" style="animation-delay: 0.8s;">Contact</a></li>
         <li>
-          <a href="#registration" class="btn btn-primary mobile-nav-link" style="animation-delay: 0.8s; font-size: 1.25rem; margin-top: 1.5rem;">
+          <a href="#registration" class="btn btn-primary mobile-nav-link" style="animation-delay: 0.9s; font-size: 1.25rem; margin-top: 1.5rem;">
             Request Program →
           </a>
         </li>
@@ -2780,24 +2913,42 @@
         <!-- Client logos grid -->
         <div class="client-logos-section">
           <div class="logos-grid">
-            <div class="logo-slot">Institution Logo</div>
-            <div class="logo-slot">Corporate Logo</div>
-            <div class="logo-slot">School Logo</div>
-            <div class="logo-slot">College Logo</div>
-            <div class="logo-slot">Academy Logo</div>
-            <div class="logo-slot">Company Logo</div>
-            <div class="logo-slot">NGO Logo</div>
-            <div class="logo-slot">Enterprise Logo</div>
-            <div class="logo-slot">Society Logo</div>
-            <div class="logo-slot">Institute Logo</div>
-            <div class="logo-slot">Association Logo</div>
-            <div class="logo-slot">Federation Logo</div>
-            <div class="logo-slot">Foundation Logo</div>
-            <div class="logo-slot">University Logo</div>
-            <div class="logo-slot">Syndicate Logo</div>
+            <div class="logo-slot">Mutual Funds</div>
+            <div class="logo-slot">Gujarat Police</div>
+            <div class="logo-slot">Raajratna</div>
+            <div class="logo-slot">Jito</div>
+            <div class="logo-slot">Zydus</div>
+            <div class="logo-slot">Ahinsha Vishwabharti</div>
+            <div class="logo-slot">Lions International</div>
+            <div class="logo-slot">LODHA KARMA KAMAL DOGRA Foundation</div>
+            <div class="logo-slot">DLF Foundation</div>
+            <div class="logo-slot">IFFS</div>
+            <div class="logo-slot">HET</div>
+            <div class="logo-slot">Monarch</div>
+            <div class="logo-slot">Rizwan Adatia Foundation</div>
+            <div class="logo-slot">Aagam Aaryan developers</div>
+            <div class="logo-slot">Vande matram Avocab</div>
+            <div class="logo-slot">SRK Foundation</div>
+            <div class="logo-slot">TIMEX</div>
+            <div class="logo-slot">Shalibhadra</div>
+            <div class="logo-slot">JAINA ELSNER Technologies</div>
+            <div class="logo-slot">IIM Rohtak</div>
+            <div class="logo-slot">Ebc radio</div>
+            <div class="logo-slot">TEAMEX RETAIL LTD</div>
+            <div class="logo-slot">Standard Chartered</div>
+            <div class="logo-slot">Lokmat</div>
+            <div class="logo-slot">PSP Foundation</div>
+            <div class="logo-slot">SANJAY GHODAWAT GROUP</div>
+            <div class="logo-slot">State Bank Of India</div>
+            <div class="logo-slot">The Institute of Chartered Accountants of India</div>
+            <div class="logo-slot">CA India</div>
+            <div class="logo-slot">BXI</div>
+            <div class="logo-slot">SUNHEARRT</div>
+            <div class="logo-slot">GTPL</div>
+            <div class="logo-slot">ONGC</div>
           </div>
           <div class="logo-caption">
-            Trusted by organisations across India — logos available upon deployment.
+            Trusted by prestigious organizations, corporate leaders, and academic institutions across India.
           </div>
         </div>
       </div>
@@ -3397,7 +3548,7 @@
           <div class="fade-left">
             <div class="portrait-wrapper">
               <div class="portrait-frame">
-                <span class="portrait-placeholder-icon">👤</span>
+                <img src="assets/images/student_interaction.jpg" alt="Sajan Shah interacting with students" class="portrait-img">
                 <div class="portrait-accent-corner"></div>
               </div>
             </div>
@@ -3438,6 +3589,76 @@
             <p class="about-bottom-bold">
               Sajan Shah's programs don't just inspire in the room. They change how people think and act for years after.
             </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11b. IMPACT GALLERY -->
+    <section class="bg-black-section" id="gallery" style="border-top: 1px solid var(--border-gray); padding: 5rem 0;">
+      <div class="container">
+        <div class="text-center">
+          <span class="eyebrow fade-up">GALLERY</span>
+          <h2 class="section-title fade-up delay-100" style="font-size: clamp(2.5rem, 5vw, 4rem); margin-bottom: 0.5rem;">Impact In Action</h2>
+          <p class="section-subtitle fade-up delay-200" style="margin-left: auto; margin-right: auto; max-width: 700px; color: var(--muted-text);">
+            Glance through moments from our high-energy, custom transformation programs across India.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Item 1: Massive Crowd -->
+          <div class="gallery-item fade-up">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/massive_crowd.jpg" alt="Massive crowd of students at Sajan Shah event" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="gallery-category">Massive Engagement</span>
+                <h3 class="gallery-title">Youth Leadership Assemblies</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 2: Auditorium Presentation -->
+          <div class="gallery-item fade-up delay-100">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/auditorium_presentation.jpg" alt="Sajan Shah presenting in a huge auditorium" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="gallery-category">Corporate & Public Events</span>
+                <h3 class="gallery-title">Keynote Speeches & Seminars</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 3: Student Interaction -->
+          <div class="gallery-item fade-up delay-200">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/student_interaction.jpg" alt="Sajan Shah interacting with students and signing books" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="gallery-category">Personal Connection</span>
+                <h3 class="gallery-title">One-on-One Mentorship & Guidance</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 4: Hall Lecture -->
+          <div class="gallery-item fade-up delay-300">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/hall_lecture.jpg" alt="Sajan Shah lecturing in a crowded lecture hall" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="gallery-category">Academic Transformation</span>
+                <h3 class="gallery-title">School & College Programs</h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Item 5: Interactive Seminar -->
+          <div class="gallery-item fade-up delay-400">
+            <div class="gallery-img-wrapper">
+              <img src="assets/images/interactive_seminar.jpg" alt="Sajan Shah speaking to a large audience of kids" class="gallery-img">
+              <div class="gallery-overlay">
+                <span class="gallery-category">Interactive Learning</span>
+                <h3 class="gallery-title">High-Energy Student Workshops</h3>
+              </div>
+            </div>
           </div>
         </div>
       </div>
